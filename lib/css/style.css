@@ -542,7 +542,8 @@ a#logo {
 }
 
 #nav li a:hover, #nav .current a {
-	text-decoration:line-through;
+	/* text-decoration:underline; */
+	font-weight: bold;
 }
 
 a.purchase{
