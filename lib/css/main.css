@@ -52,6 +52,12 @@
 .modal img{
     width: 80%;
 }
+.aaa{
+    display: none;
+}
+.bbb{
+    display: block;
+}
 @media screen and (max-width: 1000px) {
     .modal-content{
         width: 80%;
@@ -60,4 +66,26 @@
         width: 90%;
         margin-left: 5%; 
     }
+    .bbb{
+        display: none;
+        color: yellow;
+    }
 }
+@media screen and (max-width: 1024px){
+    .aaa{
+        display: block;
+        /*color: red;*/
+    }
+    .bbb{
+        display: none;
+        /*color: yellow;*/
+    }
+}
+/*@media screen and(max-width: 1024px){
+    .hidden{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }
+}*/
