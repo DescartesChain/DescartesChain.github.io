@@ -40,7 +40,7 @@
 <!--begin container -->
 <div id="container">
     <!--begin header_wrapper -->
-    <header id="header_wrapper">
+    <header id="header_wrapper" class="shrink">
         <!--begin header -->
         <div id="header" class="clearfix">
             <!--begin row -->
@@ -590,15 +590,15 @@
 <script>
     $(function(){
         var shrinkHeader = 50;
-        $(window).scroll(function() {
-            var scroll = getCurrentScroll();
-            if ( scroll >= shrinkHeader ) {
-                $('#header_wrapper').addClass('shrink');
-            }
-            else {
-                $('#header_wrapper').removeClass('shrink');
-            }
-        });
+        // $(window).scroll(function() {
+        //     var scroll = getCurrentScroll();
+        //     if ( scroll >= shrinkHeader ) {
+        //         $('#header_wrapper').addClass('shrink');
+        //     }
+        //     else {
+        //         $('#header_wrapper').removeClass('shrink');
+        //     }
+        // });
         function getCurrentScroll() {
             return window.pageYOffset;
         }
