@@ -1852,7 +1852,7 @@ a#logo{margin-top:15px;}
     text-align: center;margin-top:25px;cursor:pointer;display:block;background:none;transition:all .3s;}
 .price_con .price_button:hover{background:#003caa;color:#fff;border:2px solid #003caa;}
 .detail_list_ul li{margin:25px 0px;height:90px;}
-.detail_list_ul li .icon{margin-left: -10px;transition:all .5s;color:#003caa;width:80px;height:80px;border:1px solid #003caa;border-radius:100%;text-align:center;line-height:80px;font-size:24px;}
+.detail_list_ul li .icon{/*margin-left: -10px;*/transition:all .5s;color:#003caa;width:80px;height:80px;border:1px solid #003caa;border-radius:100%;text-align:center;line-height:80px;font-size:24px;}
 .detail_list_ul li .li_cl{margin-left:90px;}
 .detail_list_ul li .li_cr{margin-right:90px;}
 .fl{float:left;}
