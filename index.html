@@ -9,10 +9,8 @@
 	<link rel="shortcut icon" href="lib/images/favicon.png">
     <meta name="description" content="">
     <meta name="author" content="">
-        
 	<!-- 1140px Grid styles for IE -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="lib/css/ie.css" type="text/css" media="screen" /><![endif]-->
-
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="lib/css/animate.css">
@@ -68,6 +66,9 @@
                             <ul id="nav">
                                 <li>
                                     <a href="#container">首页</a>
+                                </li>
+                                <li>
+                                    <a href="./miner.html">矿机</a>
                                 </li>
                                 <li>
                                     <a href="#showcase">应用场景</a>
@@ -481,7 +482,7 @@
                                 <div class="circle"></div>
                                 <div class="text_align_right">
                                     <h4 class="small_margins"><span class="icon"><i class="fa fa-copy"></i></span></h4>
-                                    <p class="time">2018.6.26</p>
+                                    <p class="time">2018.7.2</p>
                                     <p>笛卡尔融云链国际官网上线</p>
                                     <p>项目智慧生态系统/白皮书进行公示</p>
                                     <p>笛卡尔融云链部分开源、首期矿机全球预售开启</p>
@@ -501,8 +502,8 @@
                                 <div class="text_align_left">
                                     <h4 class="small_margins"><span class="icon"><i class="fa fa-file-text-o"></i></span></h4>
                                     <p class="time">2018.9</p>
-                                    <p>笛卡尔主链矿机研发完成并正式发售</p>
-                                    <p> 笛卡尔搭配钱包同步上线</p>
+                                    <p>笛卡尔主链矿机首批量产完成正式发售</p>
+                                    <p>笛卡尔搭配钱包同步上线</p>
 
                                 </div>
                             </div>
@@ -518,7 +519,7 @@
                                 <div class="circle"></div>
                                 <div class="text_align_right">
                                     <h4 class="small_margins"><span class="icon"><i class="fa fa-sort-amount-asc"></i></span></h4>
-                                    <p class="time">2018.9下旬</p>
+                                    <p class="time">2018.11</p>
                                     <p>笛卡尔融云链Token登陆国际数字货币交易所</p>
                                     <p>(火币、中币、比特儿等)</p>
 
@@ -1023,7 +1024,19 @@
            
     </div>
     <!--! end of #container -->
-    
+    <!-- 弹出框 -->
+    <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <a href="./miner.html">
+                 <img src="./lib/images/poster.jpg">
+            </a>
+            <!-- <div style="width: 100px;height: 50px;border: 1px solid red;position: absolute;bottom: 10px;"></div> -->
+          </div>
+
+    </div>
     <!-- scripts concatenated and minified via ant build script-->
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
     <script src="lib/js/conditional.js"></script>
@@ -1075,6 +1088,29 @@
 		scrollThreshold: 0.25
 		});
 	});
+
+    //弹出框
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName("close")[0];
+        $(document).ready(function() {
+            modal.style.display = "block";
+            // console.log('111')
+        })
+        setTimeout(function(){
+             modal.style.display = "none";
+            console.log(modal.style.display)
+        },5000)
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 	</script>
     <!-- end menu color script-->
     

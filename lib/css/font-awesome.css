@@ -14,7 +14,7 @@
 .fa {
   display: inline-block;
   font-family: FontAwesome!important;
-  font-style: normal;
+  font-style: 30px;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
