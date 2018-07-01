@@ -53,7 +53,6 @@
                     <!--begin purchase button -->
                     <!--<a href="#" class="purchase">Purchase Now</a>-->
                     <!--end purchase button -->
-
                     <!--begin nav -->
                     <ul id="nav">
                         <li>
@@ -97,8 +96,6 @@
         <div class="product_detail desktop_type detail_DS418j">
             <div class="heading">
                 <div class="container_main">
-
-
                     <div class="pure-g">
                         <div class="pure-u-1-1 pure-u-lg-1-3">
                             <ul class="breadcrumb">
@@ -122,7 +119,8 @@
                                 <!---price_con start-->
                                 <div class="price_con bounce_fade">
                                     <div class="price">￥11999</div>
-                                    <a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button">立即预约</a>
+                                    <!--<a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button">立即预约</a>-->
+                                    <a href="javascript:void(0);" class="price_button cd-popup-trigger1">立即预约</a>
                                 </div>
                                 <!---price_con end-->
                             </div>
@@ -148,7 +146,8 @@
                                 <!---price_con start-->
                                 <div class="price_con bounce_fade">
                                     <div class="price">￥11999</div>
-                                    <a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button">立即预约</a>
+                                    <!--<a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button>立即预约</a>-->
+                                    <a href="javascript:void(0);" class="price_button cd-popup-trigger1">立即预约</a>
                                 </div>
                                 <!---price_con end-->
                             </div>
@@ -370,7 +369,6 @@
 
             </div>
             <!--end row -->
-
         </div>
         <!--end nine_section -->
 
@@ -432,24 +430,61 @@
 </div>
 <!--! end of #container -->
 <!------表单弹出层--------------->
+<!----------------------登录表单--------------------->
 <div class="cd-popup1">
     <div class="cd-popup-container1">
-       <div class="title">预约提交</div>
+       <div class="title">登录</div>
         <div class="con">
             <ul>
-                <li><input type="text" placeholder="姓名"></li>
-                <li><input type="text" placeholder="联系电话"></li>
-                <li><input type="text" placeholder="邮箱"></li>
-                <li><input type="text" placeholder="订购数量"></li>
+                <li>
+                    <div class="label">用户名</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
+                </li>
+                <li>
+                    <div class="label">密码</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
+                </li>
                 <li class="last">
-                    <button class="button but_red">提交</button>
-                    <button class="button but_gray">取消</button>
+                    <button class="login100-form-btn">登录</button>
+                    <div class="login_txt_fr frr">还没有账号，<a class="log_a" href="javascript:void(0);">立即注册</a></div>
                 </li>
             </ul>
         </div>
         <a href="#0" class="cd-popup-close">X</a>
     </div>
 </div>
+<!----------------------登录表单--------------------->
+<!------------------注册表单-------------------->
+<div class="register_bg">
+    <div class=" register_form">
+        <div class="title">注册</div>
+        <div class="con">
+            <ul>
+                <li>
+                    <div class="label">用户名</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
+                </li>
+                <li>
+                    <div class="label">密码</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
+                </li>
+                <li>
+                    <div class="label">确认密码</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
+                </li>
+                <li>
+                    <div class="label">验证码</div>
+                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span><div class="yan_but">获取验证码</div> </div>
+                </li>
+                <li class="last">
+                    <button class="login100-form-btn">注册</button>
+                </li>
+            </ul>
+        </div>
+        <a href="#0" class="reg_close">X</a>
+    </div>
+</div>
+<!------------------注册表单-------------------->
 <script type="text/javascript">
     /*弹框JS内容*/
     jQuery(document).ready(function($){
@@ -535,6 +570,18 @@
     });
 </script>
 <!------表单弹出层--------------->
+<script>
+    $(".log_a").click(function(){
+        $(".cd-popup1").removeClass("is-visible");
+        $(".cd-popup1").hide();
+        $(".register_bg").addClass("is-visible1");
+    });
+    $(".reg_close").click(function(){
+        $(".register_bg").removeClass("is-visible1");
+    });
+
+
+</script>
 <!-- scripts concatenated and minified via ant build script-->
 <script src="lib/js/modernizr-2.6.1.min.js"></script>
 <script src="lib/js/conditional.js"></script>
