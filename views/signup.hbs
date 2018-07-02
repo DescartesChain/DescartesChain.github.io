@@ -2,33 +2,33 @@
 
   {{#*inline "content-block"}}
     <div class="card card-auth mx-auto mt-5">
-      <div class="card-header">注册</div>
+      <div class="card-header">{{ translation.SIGNUP_TITLE }}</div>
       <div class="card-body">
         <div class="form-group">
-          <label for="username">昵称</label>
-          <input id="username" class="form-control" type="text" aria-describedby="nameHelp" placeholder="请输入昵称">
+          <label for="username">{{ translation.SIGNUP_USERNAME }}</label>
+          <input id="username" class="form-control" type="text" aria-describedby="nameHelp">
         </div>
         <div class="form-group">
-          <label for="email">邮箱</label>
-          <input id="email" class="form-control" type="email" aria-describedby="emailHelp" placeholder="请输入邮箱">
+          <label for="email">{{ translation.SIGNUP_EMAIL }}</label>
+          <input id="email" class="form-control" type="email" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
-          <label for="phone">电话号码</label>
-          <input id="phone" class="form-control" type="number" aria-describedby="phoneHelp" placeholder="请输入手机号码">
+          <label for="phone">{{ translation.SIGNUP_PHONE }}</label>
+          <input id="phone" class="form-control" type="number" aria-describedby="phoneHelp">
         </div>
         <div class="form-group">
-          <label for="password">密码</label>
-          <input id="password" class="form-control" type="password" placeholder="请输入密码">
+          <label for="password">{{ translation.SIGNUP_PASSWORD }}</label>
+          <input id="password" class="form-control" type="password">
         </div>
         <div class="form-group">
-          <label for="confirmPassword">确认密码</label>
-          <input id="confirmPassword" class="form-control" type="password" placeholder="请确认密码">
+          <label for="confirmPassword">{{ translation.SIGNUP_CONFIRM_PASSWORD }}</label>
+          <input id="confirmPassword" class="form-control" type="password">
         </div>
-        <button id="btnSignUp" class="btn btn-primary btn-block">注册</button>
+        <button id="btnSignUp" class="btn btn-primary btn-block">{{ translation.SIGNUP_REGISTER }}</button>
 
         <div class="text-center">
-          <a class="d-block small mt-3" href="/signin">登录</a>
-          <a class="d-block small" href="/forgot-password">忘记密码？</a>
+          <a class="d-block small mt-3" href="/signin">{{ translation.SIGNUP_LGOIN }}</a>
+          <a class="d-block small" href="/forgot-password">{{ translation.FORGET_PASSWORD }}</a>
         </div>
       </div>
     </div>

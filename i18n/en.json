@@ -184,7 +184,40 @@
     "SIGNIN_REMEMBER_ME": "Remeber me",
     "SIGNIN_LOGIN": "Sign In",
     "SIGNIN_REGISTER": "Sign Up",
+
+    "PAGE_SIGNUP": "------------------------- PAGE SIGNUP ----------------------------",
+    "SIGNUP_TITLE": "Sign Up",
+    "SIGNUP_USERNAME": "Username",
+    "SIGNUP_EMAIL": "Email",
+    "SIGNUP_PHONE": "Phone",
+    "SIGNUP_PASSWORD": "Password",
+    "SIGNUP_CONFIRM_PASSWORD": "Confrim Password",
+    "SIGNUP_REGISTER": "Sign Up",
+    "SIGNUP_LGOIN": "Sign In",
     "FORGET_PASSWORD": "forget password",
+
+
+    "PAGE_PROFILE": "------------------------- PAGE PROFILE ----------------------------",
+    "PROFILE_MENU_ORDERS": "Orders",
+    "PROFILE_MENU_VOUCHERS": "Vouchers",
+    "PROFILE_MENU_ADDRESSES": "Address",
+    "PROFILE_MENU_SETTINGS": "Settings",
+    "PROFILE_MENU_SIGNOUT": "Sign Out",
+
+    "PROFILE_ORDER_UNPAIED":"Unpaid",
+    "PROFILE_ORDER_UNFINISHED": "Unfinished",
+    "PROFILE_ORDER_FINISHED":"Finished",
+    "PROFILE_ORDER_QUANTITY":"Quantity",
+    "PROFILE_ORDER_AMOUNT":"Total Price",
+    "PROFILE_VOUCHERS": "Vouchers",
+    "PROFILE_VOUCHERS_STATUS":"Status",
+    "PROFILE_ADD_VOUCHER":"Add Voucher",
+    "PROFILE_RECEIVER": "Receiver",
+    "PROFILE_RECEIVER_PHONE": "Phone",
+    "PROFILE_RECEIVER_ADDRESS": "Delivery Address",
+    "PROFILE_RECEIVER_SUBMIT": "Submit",
+
+
 
 
 

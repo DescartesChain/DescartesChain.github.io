@@ -32,6 +32,7 @@ app.use(session({
  
 app.use(i18n({
   translationsPath: path.join(__dirname, 'i18n'), // <--- use here. Specify translations files path.
+  defaultLang: 'en',
   siteLangs: ["en","zh"],
   textsVarName: 'translation'
 }));

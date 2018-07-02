@@ -19,24 +19,24 @@
                     <div class="img"><img src="images/15.jpg"></div>
                     <div class="name text_align_center"><span id="profile_name"></span></div>
                     <ul class="clearfix">
-                        <li class="current"><i class="fa fa-tags" aria-hidden="true"></i>订单</li>
-                        <li><i class="fa fa-gift" aria-hidden="true"></i>兑换码</li>
-                        <li><i class="fa fa-address-book" aria-hidden="true"></i>地址</li>
-                        <li><i class="fa fa-wrench" aria-hidden="true"></i>设置</li>
-                        <li id="signOut"><i class="fa fa-wrench" aria-hidden="true"></i>注销</li>
+                        <li class="current"><i class="fa fa-tags" aria-hidden="true"></i>{{ translation.PROFILE_MENU_ORDERS }}</li>
+                        <li><i class="fa fa-gift" aria-hidden="true"></i>{{ translation.PROFILE_MENU_VOUCHERS }}</li>
+                        <li><i class="fa fa-address-book" aria-hidden="true"></i>{{ translation.PROFILE_MENU_ADDRESSES }}</li>
+                        <li><i class="fa fa-wrench" aria-hidden="true"></i>{{ translation.PROFILE_MENU_SETTINGS }}</li>
+                        <li id="signOut"><i class="fa fa-sign-out" aria-hidden="true"></i>{{ translation.PROFILE_MENU_SIGNOUT }}</li>
                     </ul>
                     </div>
                     <div id="content">
                         <ul style="display:block;">
                             <li>
                                 <div class="cart_table">
-                                    <div class="profile_new_title"><a href="">未支付</a><a href="">未完成</a><a class="on" href="">已完成</a></div>
+                                    <div class="profile_new_title"><a href="">{{ translation.PROFILE_ORDER_UNPAIED }}</a><a href="">{{ translation.PROFILE_ORDER_UNFINISHED }}</a><a class="on" href="">{{ translation.PROFILE_ORDER_FINISHED }}</a></div>
                                     <table id="orderTable" class="responsive" valign="middle">
                                         <thead>
                                         <tr>
                                             <th></th>
-                                            <th>数量</th>
-                                            <th>总价</th>
+                                            <th>{{ translation.PROFILE_ORDER_QUANTITY }}</th>
+                                            <th>{{ translation.PROFILE_ORDER_AMOUNT }}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -54,15 +54,15 @@
                                     <table id="voucherTable" class="responsive" valign="middle">
                                         <thead>
                                         <tr>
-                                            <th>你的兑换码</th>
-                                            <th>状态</th>
+                                            <th>{{ translation.PROFILE_VOUCHERS }}</th>
+                                            <th>{{ translation.PROFILE_VOUCHERS_STATUS }}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         </tbody>
                                     </table>
                                     <div class="input_w"><input id="inputCode" type="text" placeholder=""><span class="focus-input100"></span></div>
-                                    <button id="btnAddVoucher" class="login100-form-btn">添加兑换码</button>
+                                    <button id="btnAddVoucher" class="login100-form-btn">{{ translation.PROFILE_ADD_VOUCHER }}</button>
                                 </div>
                             </li>
                         </ul>
@@ -74,19 +74,19 @@
                                 <!------------------收货地址表单-------------------->
                                 <div class="profile_form">
                                         <div class="li">
-                                            <div class="label">收货人</div>
+                                            <div class="label">{{ translation.PROFILE_RECEIVER }}</div>
                                             <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                         </div>
                                     <div class="li">
-                                            <div class="label">收货人电话</div>
+                                            <div class="label">{{ translation.PROFILE_RECEIVER_PHONE }}</div>
                                             <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                       </div>
                                     <div class="li">
-                                            <div class="label">收货地址</div>
+                                            <div class="label">{{ translation.PROFILE_RECEIVER_ADDRESS }}</div>
                                             <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                      </div>
                                     <div class="li text_center">
-                                            <button class="login100-form-btn">提交</button>
+                                            <button class="login100-form-btn">{{ translation.PROFILE_RECEIVER_SUBMIT }}</button>
                                     </div>
                                 </div>
                                 <!------------------收货地址表单-------------------->
@@ -97,19 +97,19 @@
                                 <!------------------个人信息-------------------->
                                 <div class="profile_form">
                                     <div class="li">
-                                        <div class="label">收货人</div>
+                                        <div class="label">{{ translation.PROFILE_RECEIVER }}</div>
                                         <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                     </div>
                                     <div class="li">
-                                        <div class="label">收货人电话</div>
+                                        <div class="label">{{ translation.PROFILE_RECEIVER_PHONE }}</div>
                                         <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                     </div>
                                     <div class="li">
-                                        <div class="label">收货地址</div>
+                                        <div class="label">{{ translation.PROFILE_RECEIVER_ADDRESS }}</div>
                                         <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                                     </div>
                                     <div class="li text_center">
-                                        <button class="login100-form-btn">提交</button>
+                                        <button class="login100-form-btn">{{ translation.PROFILE_RECEIVER_SUBMIT }}</button>
                                     </div>
                                 </div>
                                 <!------------------收个人信息-------------------->

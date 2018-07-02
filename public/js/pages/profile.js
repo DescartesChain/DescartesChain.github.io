@@ -51,7 +51,7 @@ Page = {
         jqxhr.done(function(data){
 
             data.forEach(function(order) {
-                var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"><div class="txt"><div class="tit"><a href="/order_detail?id='+ order._id+ '">第一代高性能笛卡尔矿机</a></div></div></div></td><td class="num">1</td><td class="price_total">￥100</td></tr>'
+                var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"><div class="txt"><div class="tit"><a href="/order_detail?id='+ order._id+ '">第一代高性能笛卡尔矿机</a></div></div></div></td><td class="num">1</td><td class="price_total">￥11999</td></tr>'
 
                 $("#orderTable tr:last").after(tr)
                 // element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
