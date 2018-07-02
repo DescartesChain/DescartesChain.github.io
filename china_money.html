@@ -78,6 +78,7 @@
                         <!--<li class="last">
                             <a href="#subscribe">Subscribe</a>
                         </li>-->
+                        <div class="header_profile"> <a class="user_a" href=""><i class="fa fa-user-circle" aria-hidden="true"></i>Samer Hassan</a></div>
                     </ul>
                     <!--end nav -->
 
@@ -114,7 +115,7 @@
                         <th></th>
                         <th>价格</th>
                         <th>数量</th>
-                        <th>总价</th>
+                        <th>预计价格</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -137,14 +138,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="cart_address text_align_right cd-popup-trigger1"><i class="fa fa-plus-square-o" aria-hidden="true"></i>添加收货地址</div>
+            <!--<div class="cart_address text_align_right cd-popup-trigger1"><i class="fa fa-plus-square-o" aria-hidden="true"></i>添加收货地址</div>
             <div class="cart_address_detail">
-                <!--<ul>
-                    <li>收货人姓名：囧的呼</li>
-                    <li>收货人电话：0371-666666</li>
-                    <li>收货人地址：河南省郑州市中原区桐柏路</li>
-                    <li>收货人地址：河南省郑州市中原区桐柏路</li>
-                </ul>-->
                 <table class="responsive" valign="middle">
                     <thead>
                     <tr>
@@ -164,9 +159,9 @@
 
                     </tbody>
                 </table>
-            </div>
+            </div>-->
             <div class="cart_button text_align_right">
-                <a class="but red" href="">支付</a>
+                <a class="but red cd-popup-trigger2" href="javascript:void(0);">支付</a>
                 <a class="but red" href="">使用兑换码</a>
             </div>
         </div>
@@ -229,27 +224,16 @@
 </div>
 <!--! end of #container -->
 <!------------------收货地址表单-------------------->
-<div class="cd-popup1">
+<div class="cd-popup2">
     <div class="cd-popup-container1">
-        <div class="title">添加收货地址</div>
-        <div class="con">
-            <ul>
-                <li>
-                    <div class="label">收货人</div>
-                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                </li>
-                <li>
-                    <div class="label">收货人电话</div>
-                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                </li>
-                <li>
-                    <div class="label">收货地址</div>
-                    <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                </li>
-                <li class="last">
-                    <button class="login100-form-btn">提交</button>
-                </li>
-            </ul>
+        <div class="money_title text_align_left">
+            <div class="t">您想要立即支付吗？</div>
+            <div class="c">您将需要选择一个安全的方式来完成支付！</div>
+        </div>
+        <div class="money_con">
+            <div class="tip_logo"><img src="lib/images/721.png"></div>
+           <div class="tip"><p>像MetaMask这样的安全钱包即是完美之地。</p><p>同时您也可以通过钱包进入游戏（无需另设密码）</p></div>
+            <a class="money_but" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">从Chrome网上商店获取</a>
         </div>
         <a href="#0" class="cd-popup-close">X</a>
     </div>
