@@ -18,12 +18,7 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <script>
-      $(function(){
-          var a=$(window).height()
-          $('#intro').css('height',a)
-      });
-  </script>
+ 
 
   {{#> css-block }}
   {{/css-block}}
@@ -43,5 +38,11 @@
 
   {{#> scripts-block }}
   {{/scripts-block }}
+   <script>
+      $(function(){
+          var a=$(window).height()
+          $('#intro').css('height',a)
+      });
+  </script>
 </body>
 </html>

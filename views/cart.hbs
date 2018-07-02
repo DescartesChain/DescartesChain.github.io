@@ -81,7 +81,7 @@
             </div>
             <div class="cart_button text_align_right">
                 <a class="but red" href="">{{ translation.CART_PAY_DEFAULT }}</a>
-                <a class="but red" href="">{{ translation.CART_PAY_VOUCHER }}</a>
+                <a class="but red cd-popup-trigger2" href="javascript:void(0);">{{ translation.CART_PAY_VOUCHER }}</a>
             </div>
         </div>
         <!--end nine_section -->
@@ -91,6 +91,26 @@
 
 
   {{#*inline "modal-block"}}
+  <!--支付表单-->
+<div class="cd-popup2">
+    <div class="cd-popup-container1">
+        <div class="dui_huan">
+            <div class="dui_huan_title">兑换码输入</div>
+            <div class="dui_huan_con">
+                <ul class="dui_huan_ul">
+                    <li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="1"></div><div class="li_r"> <span class="dui_huan_num">12346789</span> </div></li>
+                    <li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="1"></div><div class="li_r"><input class="text" type="text" placeholder="手动输入兑换码"></div></li>
+                </ul>
+                <div class="dui_huan_button">
+                    <a class="but lan" href="">确认</a>
+                    <a class="but hui" href="">取消</a>
+                </div>
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close">X</a>
+    </div>
+</div>
+<!--支付表单-->
     <div class="cd-popup1">
         <div class="cd-popup-container1">
             <div class="title">{{ translation.CART_MODAL_ADD_ADDRESS }}</div>

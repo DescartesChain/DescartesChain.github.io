@@ -2576,3 +2576,26 @@ table.responsive th{font-size:16px;line-height:40px;}
 	text-decoration: none;font-size:18px;}
 .header_profile a.user_a{text-decoration:none;}
 @media(max-width:769px){.header_profile {right:100px;}}
+
+
+/*************************兑换表单*****************/
+.dui_huan{text-align:center}
+.dui_huan_title{
+	font-size: 22px;
+	color: #555555;
+	line-height: 1.2;
+	text-transform: uppercase;
+	width: 100%;
+	display: block;
+	font-weight:bold;
+}
+.dui_huan_ul li{margin:10px 0px;line-height:35px;height:35px;text-align:left;}
+.dui_huan_ul{border:1px solid #eee;padding:15px 25px;border-radius:6px;margin:20px auto;max-width:300px;}
+.dui_huan_ul li .label{width:20px;float:left;}
+.dui_huan_ul li .li_r{margin-left:25px;border-bottom:1px solid #eee;}
+.dui_huan_ul li .radio_li{position:relative;top:3px;}
+.dui_huan_ul li .text{border:none;outline:none;height:35px;width:100%;}
+.dui_huan_button{text-align:center;}
+.dui_huan_button .but{height:30px;display:inline-block;line-height:30px;border-radius:5px;text-align:center;margin:0px 5px;color:#fff;width:100px;}
+.dui_huan_button .but.lan{background:#003caa;}
+.dui_huan_button .but.hui{background:#ddd;}
