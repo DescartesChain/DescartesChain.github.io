@@ -23,6 +23,7 @@
                         <li><i class="fa fa-gift" aria-hidden="true"></i>兑换码</li>
                         <li><i class="fa fa-address-book" aria-hidden="true"></i>地址</li>
                         <li><i class="fa fa-wrench" aria-hidden="true"></i>设置</li>
+                        <li id="signOut"><i class="fa fa-wrench" aria-hidden="true"></i>注销</li>
                     </ul>
                     </div>
                     <div id="content">
@@ -30,7 +31,7 @@
                             <li>
                                 <div class="cart_table">
                                     <div class="profile_new_title"><a href="">未支付</a><a href="">未完成</a><a class="on" href="">已完成</a></div>
-                                    <table class="responsive" valign="middle">
+                                    <table id="orderTable" class="responsive" valign="middle">
                                         <thead>
                                         <tr>
                                             <th></th>
@@ -39,63 +40,35 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td class="pro_img">
-                                                <div class="pro_td">
-                                                    <img src="images/pro11.jpg">
-                                                    <div class="txt">
-                                                        <div class="tit">第一代高性能笛卡尔矿机</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="num">1</td>
-                                            <td class="price_total">
-                                                ￥100
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro_img">
-                                                <div class="pro_td">
-                                                    <img src="images/pro11.jpg">
-                                                    <div class="txt">
-                                                        <div class="tit">第一代高性能笛卡尔矿机</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="num">1</td>
-                                            <td class="price_total">
-                                                ￥100
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro_img">
-                                                <div class="pro_td">
-                                                    <img src="images/pro11.jpg">
-                                                    <div class="txt">
-                                                        <div class="tit">第一代高性能笛卡尔矿机</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="num">1</td>
-                                            <td class="price_total">
-                                                ￥100
-                                            </td>
-                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </li>
                         </ul>
+
+                        <!-------------------------兑换码--------------->
                         <ul>
                             <li>
-                                <!-------------------------兑换码--------------->
+                                
                                 <div class="profile_new_num">
-                                <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                                    <button class="login100-form-btn">立即兑换</button>
+                                    <table id="voucherTable" class="responsive" valign="middle">
+                                        <thead>
+                                        <tr>
+                                            <th>你的兑换码</th>
+                                            <th>状态</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <div class="input_w"><input id="inputCode" type="text" placeholder=""><span class="focus-input100"></span></div>
+                                    <button id="btnAddVoucher" class="login100-form-btn">添加兑换码</button>
                                 </div>
-                                <!-------------------------兑换码--------------->
                             </li>
                         </ul>
+
+
+
                         <ul>
                             <li>
                                 <!------------------收货地址表单-------------------->
@@ -145,27 +118,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                $(function(){
-                    window.onload = function()
-                    {
-                        var $li = $('#tab li');
-                        var $ul = $('#content ul');
-                        $li.click(function(){
-                            var $this = $(this);
-                            var $t = $this.index();
-                            $li.removeClass();
-                            $this.addClass('current');
-                            $ul.css('display','none');
-                            $ul.eq($t).css('display','block');
-                        })
-                    }
-                });
-            </script>
-            <!--------tab 切换------------------->
-
-
-
         </div>
         <!--end nine_section -->
     </section>
@@ -198,6 +150,26 @@
 
     <!-- begin menu scrollTo script-->
     <script src="js/jquery.scrollTo-min.js"></script>
+
+    <script>
+    $(function(){
+        window.onload = function()
+        {
+            var $li = $('#tab li');
+            var $ul = $('#content ul');
+            $li.click(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('current');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+            })
+        }
+    });
+    </script>
+
+
     <script type="text/javascript">
         (function($){
             $(document).ready(function() {
@@ -252,5 +224,7 @@
         });
     </script>
     <!--end shrink header script -->
+
+    <script src="js/pages/profile.js"></script>
   {{/inline}}
 {{/layouts/base}}

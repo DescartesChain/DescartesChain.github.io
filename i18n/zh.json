@@ -6,6 +6,8 @@
     "TECHNOLOGY": "技术资源",
     "ROADMAP": "发展规划",
     "TEAM" : "团队",
+    "SIGNIN" : "登录",
+    "SIGNUP" : "注册",
     "PROJECT_NAME": "笛卡尔融云联",
     "SLOGON": "全球首个数字金融的通用超级银关",
     "WHITE_PAPER": "白皮书",
@@ -169,6 +171,16 @@
     "ORDER_QUANTITY": "数量",
     "ORDER_AMOUNT": "总价",
 
+
+
+    "PAGE_SIGNIN": "------------------------- PAGE SIGNIN ----------------------------",
+    "SIGNIN_TITLE": "登录",
+    "SIGNIN_USERNAME": "用户名称",
+    "SIGNIN_PASSWORD": "密码",
+    "SIGNIN_REMEMBER_ME": "记住我",
+    "SIGNIN_LOGIN": "登录",
+    "SIGNIN_REGISTER": "注册",
+    "FORGET_PASSWORD": "忘记密码？",
 
 
 

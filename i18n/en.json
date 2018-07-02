@@ -6,6 +6,9 @@
     "TECHNOLOGY": "Technology",
     "ROADMAP": "Roadmap",
     "TEAM" : "Team",
+    "SIGNIN" : "Sign In",
+    "SIGNUP" : "Sign Up",
+
     "PROJECT_NAME": "Descartes Chain",
     "SLOGON": "The First Digital Financial Universal Super FinGate in the World",
     "WHITE_PAPER": "White Paper",
@@ -172,6 +175,16 @@
     "CART_MODAL_RECEIVER_PHONE": "收货人电话",
     "CART_MODAL_RECEIVER_ADDRESS": "收货地址",
     "CART_MODAL_SUBMIT": "提交",
+
+
+    "PAGE_SIGNIN": "------------------------- PAGE SIGNIN ----------------------------",
+    "SIGNIN_TITLE": "Sign In",
+    "SIGNIN_USERNAME": "Username",
+    "SIGNIN_PASSWORD": "Password",
+    "SIGNIN_REMEMBER_ME": "Remeber me",
+    "SIGNIN_LOGIN": "Sign In",
+    "SIGNIN_REGISTER": "Sign Up",
+    "FORGET_PASSWORD": "forget password",
 
 
 

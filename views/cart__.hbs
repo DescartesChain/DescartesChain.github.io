@@ -59,7 +59,7 @@
                     <li>收货人地址：河南省郑州市中原区桐柏路</li>
                     <li>收货人地址：河南省郑州市中原区桐柏路</li>
                 </ul>-->
-                <table id="addressTable" class="responsive" valign="middle">
+                <table class="responsive" valign="middle">
                     <thead>
                     <tr>
                         <th>{{ translation.CART_RECEIVER_NAME }}</th>
@@ -68,6 +68,13 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <tr>
+                        <td class="name">囧的呼</td>
+                        <td class="tel">0371-666666</td>
+                        <td class="address">
+                            河南省郑州市中原区桐柏路
+                        </td>
+                    </tr>
 
                     </tbody>
                 </table>
@@ -84,7 +91,26 @@
 
 
   {{#*inline "modal-block"}}
-
+  <!--支付表单-->
+<div class="cd-popup2">
+    <div class="cd-popup-container1">
+        <div class="dui_huan">
+            <div class="dui_huan_title">兑换码输入</div>
+            <div class="dui_huan_con">
+                <ul class="dui_huan_ul">
+                    <li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="1"></div><div class="li_r"> <span class="dui_huan_num">12346789</span> </div></li>
+                    <li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="1"></div><div class="li_r"><input class="text" type="text" placeholder="手动输入兑换码"></div></li>
+                </ul>
+                <div class="dui_huan_button">
+                    <a class="but lan" href="">确认</a>
+                    <a class="but hui" href="">取消</a>
+                </div>
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close">X</a>
+    </div>
+</div>
+<!--支付表单-->
     <div class="cd-popup1">
         <div class="cd-popup-container1">
             <div class="title">{{ translation.CART_MODAL_ADD_ADDRESS }}</div>
@@ -92,40 +118,20 @@
                 <ul>
                     <li>
                         <div class="label">{{ translation.CART_MODAL_RECEIVER_NAME }}</div>
-                        <div class="input_w"><input id="receiver" type="text" placeholder=""><span class="focus-input100"></span></div>
+                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                     </li>
                     <li>
                         <div class="label">{{ translation.CART_MODAL_RECEIVER_PHONE }}</div>
-                        <div class="input_w"><input id="phone" type="text" placeholder=""><span class="focus-input100"></span></div>
+                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                     </li>
                     <li>
                         <div class="label">{{ translation.CART_MODAL_RECEIVER_ADDRESS }}</div>
-                        <div class="input_w"><input id="address" type="text" placeholder=""><span class="focus-input100"></span></div>
+                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
                     </li>
                     <li class="last">
-                        <button id="btnAddAddress" class="login100-form-btn">{{ translation.CART_MODAL_SUBMIT }}</button>
+                        <button class="login100-form-btn">{{ translation.CART_MODAL_SUBMIT }}</button>
                     </li>
                 </ul>
-            </div>
-            <a href="#0" class="cd-popup-close">X</a>
-        </div>
-    </div>
-
-
-    <!--支付表单-->
-    <div class="cd-popup2">
-        <div class="cd-popup-container1">
-            <div class="dui_huan">
-                <div class="dui_huan_title">兑换码输入</div>
-                <div class="dui_huan_con">
-                    <ul id="voucherList" class="dui_huan_ul">
-                        <li id="voucherInput" class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher"></div><div class="li_r"><input class="text" type="text" placeholder="手动输入兑换码"></div></li>
-                    </ul>
-                    <div class="dui_huan_button">
-                        <button id="btnVoucherPay" class="but lan" >确认</button>
-                        <a class="but hui" href="">取消</a>
-                    </div>
-                </div>
             </div>
             <a href="#0" class="cd-popup-close">X</a>
         </div>
@@ -134,6 +140,9 @@
   {{/inline}}
 
   {{#*inline "scripts-block"}}
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
     <script type="text/javascript">
     /*弹框JS内容*/
     jQuery(document).ready(function($){
@@ -287,9 +296,6 @@
         // }
     });
 </script>
-
-
 <!--end shrink header script -->
-    <script src="js/pages/cart.js"></script>
   {{/inline}}
 {{/layouts/base}}

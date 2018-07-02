@@ -30,11 +30,11 @@
             <!--sub_order_product end-->
             <!--sub_order_deli start-->
             <div class="sub_order_deli">
-                <div class="li_l">Delivery1</div>
+                <div class="li_l">发货时间</div>
                 <div class="li_r">
-                    <p>Dispatched:Winthin 24 hours</p>
-                    <p>Delivery:9 July,2016 by pre-9:30am Delivery</p>
-                    <div class="more_date">Delivery:9 July,2016 by pre-9:30am Delivery</div>
+                    <p>预计 2018年 9月 陆续发货</p>
+                    {{!-- <p>Delivery:9 July,2016 by pre-9:30am Delivery</p>
+                    <div class="more_date">Delivery:9 July,2016 by pre-9:30am Delivery</div> --}}
                 </div>
             </div>
             <!--sub_order_deli end-->
@@ -43,29 +43,27 @@
             <div class="sub_order_deli sub_order_ship">
                 <div class="li_l">Ship to:</div>
                 <div class="li_r">
-                    <p>Dispatched:Winthin 24 hours</p>
-                    <p>Delivery:9 July,2016 by pre-9:30am Delivery</p>
-                    <div class="more_date">Delivery:9 July,2016 by pre-9:30am Delivery</div>
+                    <p id="shipAddress"></p>
                 </div>
             </div>
             <!--sub_order_ship end-->
             <!--sub_order_bill start-->
             <div class="sub_order_bill">
-                <div class="sub_order_bill_title">Payment and Billing3 Details</div>
+                <div class="sub_order_bill_title">Payment and Billing Details</div>
                 <div class="sub_order_deli sub_order_ship">
-                    <div class="li_l">Bill to:</div>
+                    <div class="li_l">Payment</div>
                     <div class="li_r">
-                        <p>Dispatched:Winthin 24 hours</p>
-                        <p>Delivery:9 July,2016 by pre-9:30am Delivery</p>
-                        <div class="more_date">Delivery:9 July,2016 by pre-9:30am Delivery</div>
+                        <p id="orderId"></p>
+                        <p id="orderDate"></p>
                     </div>
                 </div>
                 <div class="sub_order_deli sub_order_ship">
                     <div class="li_l">Billing Address:</div>
                     <div class="li_r">
-                        <p>Dispatched:Winthin 24 hours</p>
-                        <p>Delivery:9 July,2016 by pre-9:30am Delivery</p>
-                        <div class="more_date">Delivery:9 July,2016 by pre-9:30am Delivery</div>
+                        <p id="customerName"></p>
+                        <p id="phone"></p>
+                        <p id="address"></p>
+                        <p id="vocher"></p>
                     </div>
                 </div>
             </div>
@@ -154,5 +152,6 @@
         });
     </script>
     <!--end shrink header script -->
+    <script src="js/pages/order_detail.js"></script>
   {{/inline}}
 {{/layouts/base}}

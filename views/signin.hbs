@@ -2,27 +2,27 @@
 
   {{#*inline "content-block"}}
     <div class="card card-auth mx-auto mt-5">
-      <div class="card-header">登录</div>
+      <div class="card-header">{{ translation.SIGNIN_TITLE }}</div>
       <div class="card-body">
         <div class="form-group">
-          <label for="username">用户名称</label>
+          <label for="username">{{ translation.SIGNIN_USERNAME }}</label>
           <input id="username" class="form-control" type="username" aria-describedby="usernameHelp" placeholder="请输入用户名">
         </div>
         <div class="form-group">
-          <label for="password">密码</label>
+          <label for="password">{{ translation.SIGNIN_PASSWORD }}</label>
           <input id="password" class="form-control" type="password" placeholder="请输入密码">
         </div>
         <div class="form-group">
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox">记住我</label>
+              <input class="form-check-input" type="checkbox">{{ translation.SIGNIN_REMEMBER_ME }}</label>
           </div>
         </div>
-        <button id="btnSignIn" class="btn btn-primary btn-block">登录</button>
+        <button id="btnSignIn" class="btn btn-primary btn-block">{{ translation.SIGNIN_LOGIN }}</button>
 
         <div class="text-center">
-          <a class="d-block small mt-3" href="signup.html">注册</a>
-          <a class="d-block small" href="forgot-password.html">忘记密码？</a>
+          <a class="d-block small mt-3" href="/signup">{{ translation.SIGNIN_REGISTER }}</a>
+          <a class="d-block small" href="/forgot-password">{{ translation.FORGET_PASSWORD }}</a>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@
                                 <div class="price_con bounce_fade">
                                     <div class="price">{{ translation.PRODUCT_PRICE }}</div>
                                     <!--<a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button">立即预约</a>-->
-                                    <a href="javascript:void(0);" class="price_button cd-popup-trigger1">{{ translation.PRODUCT_ORDER }}</a>
+                                    <a href="/cart" class="price_button">{{ translation.PRODUCT_ORDER }}</a>
                                 </div>
                                 <!---price_con end-->
                             </div>
@@ -42,29 +42,7 @@
                                 <img src="images/61.png">
                             </div>
                         </div>
-                        <div class="pure-u-1-1 hide-at-lg hide-at-xl hide-at-xxl bounce_fade">
-                            <div class="photo small">
-                                <img src="images/61.png">
-                            </div>
-                        </div>
-
-                        <div class="pure-u-1-1 pure-u-lg-1-2 aaa">
-                            <div class="intro">
-                                <h1 class=" bounce_fade"><span class="type">{{ translation.PRODUCT_NAME }}</span><span class="name">&nbsp;&nbsp;&nbsp;{{ translation.PRODUCT_MODEL }}</span></h1>
-                                <p class="desc  bounce_fade">{{ translation.PRODUCT_INTRO }}</p>
-                                <div class="awards"> </div>
-                                <!---price_con start-->
-                                <div class="price_con bounce_fade">
-                                    <div class="price">{{ translation.PRODUCT_PRICE }}</div>
-                                    <!--<a href="http://openminer.mikecrm.com/zAHcgGY" class="price_button>立即预约</a>-->
-                                    <a href="javascript:void(0);" class="price_button cd-popup-trigger1">{{ translation.PRODUCT_ORDER }}</a>
-                                </div>
-                                <!---price_con end-->
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -265,58 +243,6 @@
 
   {{#*inline "modal-block"}}
 
-    <div class="cd-popup1">
-        <div class="cd-popup-container1">
-        <div class="title">登录</div>
-            <div class="con">
-                <ul>
-                    <li>
-                        <div class="label">用户名</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                    </li>
-                    <li>
-                        <div class="label">密码</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                    </li>
-                    <li class="last">
-                        <button class="login100-form-btn">登录</button>
-                        <div class="login_txt_fr frr">还没有账号，<a class="log_a" href="javascript:void(0);">立即注册</a></div>
-                    </li>
-                </ul>
-            </div>
-            <a href="#0" class="cd-popup-close">X</a>
-        </div>
-    </div>
-
-    <div class="register_bg">
-        <div class=" register_form">
-            <div class="title">注册</div>
-            <div class="con">
-                <ul>
-                    <li>
-                        <div class="label">用户名</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                    </li>
-                    <li>
-                        <div class="label">密码</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                    </li>
-                    <li>
-                        <div class="label">确认密码</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span></div>
-                    </li>
-                    <li>
-                        <div class="label">验证码</div>
-                        <div class="input_w"><input type="text" placeholder=""><span class="focus-input100"></span><div class="yan_but">获取验证码</div> </div>
-                    </li>
-                    <li class="last">
-                        <button class="login100-form-btn">注册</button>
-                    </li>
-                </ul>
-            </div>
-            <a href="#0" class="reg_close">X</a>
-        </div>
-    </div>
   {{/inline}}
 
   {{#*inline "scripts-block"}}
