@@ -157,24 +157,32 @@
 
     "PAGE_CART": "----------------------------- PAGE CART ------------------------------",
 
-    "TITLE_CART": "购物车",
-    "CART_PRICE": "价格",
-    "CART_QUANTITY": "数量",
-    "CART_AMOUNT": "总价",
-    "CART_PRODUCT_NAME":"第一代高性能笛卡尔矿机",
-    "CART_PRODUCT_INTRO":"第一代高性能笛卡尔矿机,第一代高性能笛卡尔矿机",
-    "CART_ADD_ADDRESS": "添加收货地址",
-    "CART_RECEIVER_NAME": "收货人姓名",
-    "CART_RECEIVER_PHONE": "收货人电话",
-    "CART_RECEIVER_ADDRESS": "收货人地址",
-    "CART_PAY_DEFAULT": "支付",
-    "CART_PAY_VOUCHER": "使用兑换码",
+    "TITLE_CART": "Shopping cart",
+    "CART_PRICE": "Price",
+    "CART_QUANTITY": "Quantity",
+    "CART_AMOUNT": "Total Price",
+    "CART_PRODUCT_NAME":"DCAR X1",
+    "CART_PRODUCT_INTRO":"First generation high performance Cartesian mining machine",
+    "CART_ADD_ADDRESS": "Add Shipping Address",
+    "CART_RECEIVER_NAME": "Receiver Name",
+    "CART_RECEIVER_PHONE": "Receiver Phone",
+    "CART_RECEIVER_ADDRESS": "Receiver Address",
+    "CART_PAY_DEFAULT": "Pay with ETH",
+    "CART_PAY_VOUCHER": "Pay with Voucher",
 
-    "CART_MODAL_ADD_ADDRESS": "添加收货地址",
-    "CART_MODAL_RECEIVER_NAME": "收货人",
-    "CART_MODAL_RECEIVER_PHONE": "收货人电话",
-    "CART_MODAL_RECEIVER_ADDRESS": "收货地址",
-    "CART_MODAL_SUBMIT": "提交",
+    "CART_MODAL_ADD_ADDRESS": "Add Shipping Address",
+    "CART_MODAL_RECEIVER_NAME": "Receiver",
+    "CART_MODAL_RECEIVER_PHONE": "Receiver Name",
+    "CART_MODAL_RECEIVER_ADDRESS": "Receiver Address",
+    "CART_MODAL_SUBMIT": "Submit",
+
+
+    "PAGE_ORDER" : "------------------------- PAGE ORDER ----------------------------",
+    "TITLE_ORDER": "Cart",
+    "ORDER_PRICE": "Price",
+    "ORDER_QUANTITY": "Quantiy",
+    "ORDER_AMOUNT": "Total Price",
+    "DISCLAIMER": "DCAR x1 is different from consumer electronics. It is specially customized according to customer demands. Made for investment products, investors need to be cautious.  If you purchase this product, you will be considered to be an endorsement of this policy. The paid purchase price will not be refunded, except for the case that the mining machine cannot be delivered. Due to market fluctuations, the price of the product may be adjusted at any time after your purchase. We do not accept the responsibility of prior notice and  Variable price compensation.",
 
 
     "PAGE_SIGNIN": "------------------------- PAGE SIGNIN ----------------------------",
@@ -217,7 +225,9 @@
     "PROFILE_RECEIVER_ADDRESS": "Delivery Address",
     "PROFILE_RECEIVER_SUBMIT": "Submit",
 
-
+    "CART_PANEL_VOUCHER_TITLE": "Enter Your Voucher",
+    "CART_PANEL_VOUCHER_SUBMIT": "Submit",
+    "CART_PANEL_VOUCHER_CANCEL":"Cancel",
 
 
 

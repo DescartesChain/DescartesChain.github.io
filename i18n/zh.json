@@ -155,8 +155,8 @@
     "CART_RECEIVER_NAME": "收货人姓名",
     "CART_RECEIVER_PHONE": "收货人电话",
     "CART_RECEIVER_ADDRESS": "收货人地址",
-    "CART_PAY_DEFAULT": "支付",
-    "CART_PAY_VOUCHER": "使用兑换码",
+    "CART_PAY_DEFAULT": "ETH 支付",
+    "CART_PAY_VOUCHER": "兑换码支付",
 
     "CART_MODAL_ADD_ADDRESS": "添加收货地址",
     "CART_MODAL_RECEIVER_NAME": "收货人",
@@ -164,12 +164,16 @@
     "CART_MODAL_RECEIVER_ADDRESS": "收货地址",
     "CART_MODAL_SUBMIT": "提交",
 
+    "CART_PANEL_VOUCHER_TITLE": "兑换码输入",
+    "CART_PANEL_VOUCHER_SUBMIT": "确认",
+    "CART_PANEL_VOUCHER_CANCEL":"取消",
 
     "PAGE_ORDER" : "------------------------- PAGE ORDER ----------------------------",
     "TITLE_ORDER": "购物车",
     "ORDER_PRICE": "价格",
     "ORDER_QUANTITY": "数量",
     "ORDER_AMOUNT": "总价",
+    "DISCLAIMER": "DCAR x1不同于消费类电子产品, 是根据客户需求特殊定制的,用于投资的产品, 投资需谨慎. 本产品一旦购买, 即视为对本政策的认同. 已付货款将不予退还, 矿机无法出货的情况除外. 由于市场波动, 在您购买后,产品价格可能会随时调整, 我们不承担事先通知, 差价补偿的责任.",
 
 
 
