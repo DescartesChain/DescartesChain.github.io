@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else}}
+        Open Miner
+      {{/if}}
+    </title>
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom css for this page -->
+    {{#> custom-css-block}}
+        {{!-- Custom <head> content per page could be added. --}}
+    {{/custom-css-block}}
+    <!-- End Custom css -->
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="bg-dark">
+    <div class="container">
+      <!-- 内容 -->
+        {{#> content-block}}
+        {{/content-block}}
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/preload.min.js"></script>
+
+    {{#> scripts-block }}
+    {{/scripts-block }}
+  </body>
+
+</html>

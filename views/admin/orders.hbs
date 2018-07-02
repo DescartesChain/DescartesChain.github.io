@@ -1,0 +1,217 @@
+{{#> layouts/admin_base title="订单" }}
+
+  {{#*inline "custom-css-block" }}
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  {{/inline}}
+
+  {{#*inline "content-block"}}
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="dashboard.html">仪表盘</a>
+        </li>
+        <li class="breadcrumb-item active">订单</li>
+      </ol>
+
+      <!-- 重磅内容 -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-newspaper-o"></i> 添加订单</div>
+        <div class="card-body">
+            <form id="formCreate" autocomplete="off">
+              <div class="col-lg-12">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="客户姓名">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="text" id="phone" name="phone" class="form-control" placeholder="手机">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="text" id="email" name="email" class="form-control" placeholder="邮箱">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="text" id="address" name="address" class="form-control" placeholder="地址">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="number" name="masterQTY" class="form-control" placeholder="母机数量（单位：台）">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input type="number" name="nodeQTY" class="form-control" placeholder="子机数量（单位：台）">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12">
+                      <div class="form-gorup">
+                        <button type="submit" class="btn btn-success" id="btnCreate">Add</button>
+                        <button type="button" class="btn btn-danger"  id="btnDelete" data-toggle="modal"  data-target="#modal_Del">Delete</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+
+
+      <!-- 添加对话框 -->
+      <div class="modal fade" id="modal_Add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color: #F61A3E;">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">新增路由器</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form id="formCreate" autocomplete="off">
+                          <input type="hidden", name="token">
+                          <label>供应商：</label>
+                          <input type="text" class="form-control" id="vendor" name="vendor"  placeholder="请输入供应商" maxlength="10"><span class="eror">用户名不能为空！用户名2—10个位！不可以是特殊字符。</span>
+                          <br><label>型号：</label>
+                          <input type="text" class="form-control" id="model"  name="model"    placeholder="请输入型号"  maxlength="10"><span class="eror">密码不能为空！密码4-10位（或密码不可以有空格）！</span>
+                          <br><label>序列号：</label>
+                          <input type="text" class="form-control" id="sn"     name="sn"       placeholder="请确认密码"  maxlength="10"><span class="eror">密码不一致！</span>
+                          <br><label>固件</label>
+                          <input type="text" class="form-control" id="fv"     name="fv"       placeholder="请输入邮箱"  maxlength="30"><span class="eror">邮箱不能为空或格式不正确！例：a@aliyun.com</span>
+                          <br><label>内核</label>
+                          <input type="text" class="form-control" id="kernel" name="kernel"   placeholder="请输入邮箱"  maxlength="30"><span class="eror">邮箱不能为空或格式不正确！例：a@aliyun.com</span>
+                          <br><label>部署区域：</label>
+                          <input type="text" class="form-control" id="area"    name="area"     placeholder="请输入手机号" maxlength="11"><span class="eror">手机号不能为空或格式不正确！例：187********</span>
+                          <br><label>部署地址：</label>
+                          <input type="text" class="form-control" id="location" name="location" placeholder="请输入手机号" maxlength="11"><span class="eror">手机号不能为空或格式不正确！例：187********</span>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                              <button type="submit" class="btn btn-primary" id="btnCreate">提交</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-newspaper-o"></i> 订单列表</div>
+          <div class="card-body">
+            <!-- Example DataTables Card-->
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>客户姓名</th>
+                    <th>手机</th>
+                    <th>地址</th>
+                    <th>邮箱</th>
+                    <th>母机数量</th>
+                    <th>子机数量</th>
+                    <th>提货码</th>
+                    <th>下单时间</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="modalDetailLabel">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color: #F61A3E;">&times;</span></button>
+                      <h4 class="modal-title">Cell Details</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <tbody>
+                                  <tr><td>主机名称</td><td><span id="hostname" ></span></td></tr>
+                                  <tr><td>Net Group：</td> <td><span id="netname"></span></td></tr>
+                                  <tr><td>IP：</td> <td><span id="tIp"></span></td></tr>
+                                  <tr><td>Netmask: </td> <td><span id="subnet"></span></td></tr>
+                                  <tr><td>Cell Version: </td> <td><span id="version"></span></td></tr>
+                                  <tr><td>MAC 地址</td><td><span id="mac" ></span></td></tr>
+                                  <tr><td>主机密码</td><td><span id="password" ></span></td></tr>
+                                  <tr><td>型号</td><td><span id="model" ></span></td></tr>
+                                  <tr><td>固件版本</td><td><span id="fv" ></span></td></tr>
+                                  <tr><td>序列号</td><td><span id="sn" ></span></td></tr>
+                                  <tr><td>宽带账号</td><td><span id="adslId" ></span></td></tr>
+                                  <tr><td>宽带密码</td><td><span id="adslKey" ></span></td></tr>
+                                  <tr><td>2.4G 无线SSID</td><td><span id="ssid" ></span></td></tr>
+                                  <tr><td>2.4G 无线密码</td><td><span id="wifiKey" ></span></td></tr>
+                                  <tr><td>部署区域</td><td><span id="area" ></span></td></tr>
+                                  <tr><td>部署地址</td><td><span id="location" ></span></td></tr>
+                                  <tr><td>部署场景</td><td><span id="scene" ></span></td></tr>
+                                  <tr><td>备注</td><td><span id="note" ></span></td></tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <!--删除对话框-->
+      <div class="modal fade" id="modal_Del" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color: #F61A3E;">&times;</span></button>
+                      <h4 class="modal-title" >删除路由器</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group" style="text-align: center;height: 100px;">
+                            <img src="/img/icon_prompt.png" style="position: absolute;right: 0;left: 0;margin: auto;"><br><p style="margin-top: 75px;">确定删除选中的路由器吗？</p>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnDelete">提交</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  {{/inline}}
+
+
+  {{#*inline "scripts-block"}}
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/pages/orders.min.js"></script>
+  {{/inline}}
+
+{{/layouts/admin_base}}
