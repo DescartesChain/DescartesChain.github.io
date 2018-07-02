@@ -1,0 +1,180 @@
+{
+    "TITLE": "Descartes Chain",
+    "HOME": "Home",
+    "MINER": "Miner",
+    "APPLICATIONS": "Applications",
+    "TECHNOLOGY": "Technology",
+    "ROADMAP": "Roadmap",
+    "TEAM" : "Team",
+    "PROJECT_NAME": "Descartes Chain",
+    "SLOGON": "The First Digital Financial Universal Super FinGate in the World",
+    "WHITE_PAPER": "White Paper",
+    "TOKEN_WALLET": "Token Wallet",
+
+    "TITLE_APPLICATIONS": "Applications",
+
+    "INTRODUCTION": "Descartes Chain aims at establishing the super public blockchain in the age of digital finance, in hope of breaking through the isolated closed island situation of value, to solve the problems of the incompatible relationship between traditional finance and digital finance. Descartes Chain provides thoroughly improved financial functions in support of metadata recording, and fully releases the liquidity of various assets, and digs out the potential value of assets as well. On promoting the development of the global digital financial ecosystem, Descartes Chain is now becoming the key infrastructure to connect the entire digital currency world with traditional financial world.",
+    
+    "FEATURE_01_TITLE": "Insurance Contracts",
+    "FEATURE_01_CONTENT": "The contract platform of mutual guarantee and insurance from Descartes Chain is to build up an intelligently supported contract market based on blockchain technology to replace the traditional insurance system by a mediational guarantee system of mutual assistance.",
+
+    "FEATURE_02_TITLE": "Universal Circulation or Exchange During Transaction",
+    "FEATURE_02_CONTENT": "After various digital assets placed into Descartes Chain, a transaction mechanism of privacy protection will be provided by Descartes Chain, to give an overall support for transactions in need of privacy protection.",
+    
+
+    "FEATURE_03_TITLE": "Assets Management",
+    "FEATURE_03_CONTENT": "On the ICO platform derived from Descartes Chain, the publisher can support multi-currency investments, while he publishes under smart contracts.",
+    
+
+    "FEATURE_04_TITLE": "Credit and Loan & Debit and Credit",
+    "FEATURE_04_CONTENT": "Descartes Chain helps the organizations and individuals with credit and assets to be an intermediary of digital currency’s supply and demand.",
+    
+
+    "FEATURE_05_TITLE": "Decentration Exchange",
+    "FEATURE_05_CONTENT": "The decentration exchange developed from Descartes Chain, with an identification speed of second, shares the same characteristics as all DACs, but is distinguished from traditional centralized exchanges. It can avoid a series of problems in centralized exchanges, such as high cost, bad security, illegal operation of exchanges.",
+    
+    "FEATURE_06_TITLE": "Convenient Payment",
+    "FEATURE_06_CONTENT": "Descartes Chain, as a distributed multi-currency platform, is a blockchain financial service that can perfectly combine digital assets with bank cards. Vendors and users all can use Descartes Chain Wallet to complete functions, including multi-currency payment and settlement, saving and exchange or transfer, etc. No need for the installation of more digital currency wallets.",
+
+    "TITLE_ARCH": "The Technology Structure of Descartes Chain",
+
+    "TITLE_ECOSYSTEM": "The Revolutionary Miner Ecosystem of Descartes Chain",
+    "ECOSYSTEM_ITEM_1": "To Change the current situation that late-comers get on the top; to create a fairer beneficial system.",
+    "ECOSYSTEM_ITEM_2": "To resist the harsh rate advantage ASIC equipment; to indeed realize the distributed decentralization.",
+    "ECOSYSTEM_ITEM_3": "To revolutionarily lower the standard for participation in mining; to establish an overall blockchain ecosystem.",
+
+    "TITLE_DEV_PLAN": "The Development Planning for Descartes Chain",
+    "DEV_PLAN_01_DATE": "June, 2017",
+    "DEV_PLAN_01_GOAL": "The project and development teams of Descartes Chain were set up and the projects of Descartes Chain stepped into the stage of planning and preparation.",
+
+    "DEV_PLAN_02_DATE": "October 2nd, 2017",
+    "DEV_PLAN_02_GOAL": "Tests for base modules of Descartes Chain and tests for anti-fusion of ASIC technology",
+
+    "DEV_PLAN_03_DATE": "March 21st, 2018",
+    "DEV_PLAN_03_GOAL": "Tests for modules of smart contracts; the Asian-Pacific project operation and development team was built up to focus on the Asian-Pacific market.",
+
+    "DEV_PLAN_04_DATE": "May 3rd, 2018",
+    "DEV_PLAN_04_GOAL": "The financial service license in Ukraine was examined and approved; Ukraine Gold Coin Exchange Ltd. was established officially. ",
+
+    "DEV_PLAN_05_DATE": "May 18th, 2018",
+    "DEV_PLAN_05_GOAL": "The only one agency of Descartes Chain in Asian-Pacific area was settled in Changsha, influencing the whole area; the test for Descartes Chain V1.0 was started. ",
+
+    "DEV_PLAN_06_DATE": "May 30th, 2018",
+    "DEV_PLAN_06_GOAL": "Descartes software and hardware products were officially in the stage of research, development and production; the closed tests for the official website of Descartes Chain was operated.",
+
+    "DEV_PLAN_07_DATE": "June 26th, 2018",
+    "DEV_PLAN_07_GOAL": "The international website of Descartes Chain was launched online; the project intelligent ecosystem/white paper was published; the worldwide advance sale for some open source of Descartes Chain and mining machines was started.",
+
+    "DEV_PLAN_08_DATE": "September, 2018",
+    "DEV_PLAN_08_GOAL": "The development of Descartes Chain mining machines will be finished and the mining machines will be launched for sales; Descartes Chain Wallet will be launched simultaneously.",
+
+    "DEV_PLAN_09_DATE": "Late September, 2018",
+    "DEV_PLAN_09_GOAL": "Token of Descartes Chain will be issued in international digital currency exchanges (such as Huobi, A.T.Xchange, Bter, etc.)",
+
+    "DEV_PLAN_10_DATE": "January, 2019",
+    "DEV_PLAN_10_GOAL": "The establishment of 100 Descartes foundation blocks will be completed; The open source code of the main Descartes Chain will be published on its official website. ",
+
+    "DEV_PLAN_11_DATE": "March, 2019",
+    "DEV_PLAN_11_GOAL": "Descartes Blockchain Browser, Descartes Blockchain Wallet and Digital Currency Online Store will be launched; Descartes online application matrix will be initially completed.",
+
+    "DEV_PLAN_12_DATE": "May, 2019",
+    "DEV_PLAN_12_GOAL": "Descartes digital platform will be in the stage of development; Descartes Decentralization Exchange will be officially launched online.",
+
+    "DEV_PLAN_13_DATE": "October, 2019",
+    "DEV_PLAN_13_GOAL": "The first offline application of Descartes Chain “Digipay Card” will be developed; the applications for global vendors will be launched and global stateless digital currency circulation and exchange will be realized.",
+
+    "DEV_PLAN_14_DATE": "November, 2019",
+    "DEV_PLAN_14_GOAL": "Descartes digital platform will be tested online; the transaction pair BTC/ETH will be open; Descartes digital currency credit and loan service will be started.",
+
+    "DEV_PLAN_15_DATE": "December, 2019",
+    "DEV_PLAN_15_GOAL": "The connection of 100 side chains will be finished; the entire intelligent ecosystem structure will be completed.",
+
+
+    "FINISHED" : "Finished",
+    "TO_BE_FINISHED" : "To be Finished",
+
+    "TITLE_TEAM" : "Core Team",
+
+    "CEO_NAME": "CEO, co-founder, Panagiotis Giannarakis",
+    "CEO_INTRO": "Master degree of Economics and Econometrics; over 20 years of international business experience and a profound background of private equity and investment banks; worked as CEO, COO, CFO and board members in many listed companies.",
+
+    "CTO_NAME": "CTO, co-founder, Madini O. Alassafi",
+    "CTO_INTRO": "Doctor degree of Electronic Computer; main study directions: information and computer technology, information security and blockchain technology; published many papers of blockchain technology; worked as chief technical adviser in WTC.",
+
+    "COO_NAME": "COO, co-founder, Hany F. Atlam",
+    "COO_INTRO": "Doctor degree of business college; now working as the partner with many overseas fund companies and software companies; over 10 years of researching and practicing experience in business services.",
+
+    "TITLE_DEV_TEAM": "Development Team",
+    "TEAM_MEMBER_01": "Tiago M. Fernández-Caramés",
+    "TEAM_MEMBER_02": "Samer Hassan",
+    "TEAM_MEMBER_03": "Paula Fraga-Lamas",
+    "TEAM_MEMBER_04": "Marta Rey-Garcia",
+    "TEAM_MEMBER_05": "Galina Zadorojhnaya",
+    "TEAM_MEMBER_06": "Cedric Hebert",
+    "TEAM_MEMBER_07": "Javier Gonzalez-Sanchez",
+    "TEAM_MEMBER_08": "Paulo Ferreira",
+    "TEAM_MEMBER_09": "Antonino Sabetta",
+    "TEAM_MEMBER_10": "Fredrik Petterson",
+    "TEAM_MEMBER_11": "Erik Westrup",
+    "TEAM_MEMBER_12": "David Rozas",
+
+    "TITLE_PARTNER": "Partner",
+
+    "TITLE_JOIN_US": "Join in the community of Descartes Ecosystem",
+    "SUBSCRIBE_MSG": "We received your message and you'll hear from us soon. Thank You!",
+
+
+
+    "PRODUCT_NAME": "DCAR Miner",
+    "PRODUCT_MODEL": "x1",
+    "PRODUCT_INTRO": "First generation high performance Cartesian mining machine",
+    "PRODUCT_PRICE": "$1820",
+    "PRODUCT_ORDER": "Subscribe",
+
+    "PRODUCT_PART_01_TITLE_01": "Powerful Engine",
+    "PRODUCT_PART_01_INTRO_01": "Enterprise-level quad core CPU; 64-bit processor.",
+    "PRODUCT_PART_01_TITLE_02": "Multiple Connectors",
+    "PRODUCT_PART_01_INTRO_02": "All you need are here: 1080P HDMI, IEEE802b/gn, USB, SATA, SPI, JTAG.",
+    "PRODUCT_PART_01_TITLE_03": "Encrypted Hardware",
+    "PRODUCT_PART_01_INTRO_03": "Original security encryption mechanism of TrustZone; self-destruction triggered by any teardown.",
+
+    "PRODUCT_PART_02_TITLE_01": "Excellent Thoughtful Design",
+    "PRODUCT_PART_02_INTRO_01": "A perfect combination of technology and art, with DCAR x1 to experience the progress of times",
+    "PRODUCT_PART_02_TITLE_02": "Quiet and Environmental-Friendly Experience",
+    "PRODUCT_PART_02_INTRO_02": "7x24 constantly stable operation; low power consumption; no noise.",
+    "PRODUCT_PART_02_TITLE_03": "Easy maintenance",
+    "PRODUCT_PART_02_INTRO_03": "Automatic operation after the connection with power source and network, no requirement for configuration",
+
+    "PRODUCT_PART_03_TITLE_01": "DCAR Multi-Functional Wallet",
+    "PRODUCT_PART_03_INTRO_01": "Descartes mining dig; United digital assets management; cross-platform; multiple terminals；daily earning; market prices in a glance.",
+    "PRODUCT_PART_03_TITLE_02": "Professional Technological Support",
+    "PRODUCT_PART_03_INTRO_02": "Professional technology team provides a lifelong free update service for the systems and softwares of mining digs.",
+    "PRODUCT_PART_03_TITLE_03": "Custom system",
+    "PRODUCT_PART_03_INTRO_03": "Based on Linux kernel, built-in encryption engine, financial level security protection.",
+
+    "PAGE_CART": "----------------------------- PAGE CART ------------------------------",
+
+    "TITLE_CART": "购物车",
+    "CART_PRICE": "价格",
+    "CART_QUANTITY": "数量",
+    "CART_AMOUNT": "总价",
+    "CART_PRODUCT_NAME":"第一代高性能笛卡尔矿机",
+    "CART_PRODUCT_INTRO":"第一代高性能笛卡尔矿机,第一代高性能笛卡尔矿机",
+    "CART_ADD_ADDRESS": "添加收货地址",
+    "CART_RECEIVER_NAME": "收货人姓名",
+    "CART_RECEIVER_PHONE": "收货人电话",
+    "CART_RECEIVER_ADDRESS": "收货人地址",
+    "CART_PAY_DEFAULT": "支付",
+    "CART_PAY_VOUCHER": "使用兑换码",
+
+    "CART_MODAL_ADD_ADDRESS": "添加收货地址",
+    "CART_MODAL_RECEIVER_NAME": "收货人",
+    "CART_MODAL_RECEIVER_PHONE": "收货人电话",
+    "CART_MODAL_RECEIVER_ADDRESS": "收货地址",
+    "CART_MODAL_SUBMIT": "提交",
+
+
+
+    "COPYRIGHT_PART_A": "Copyright © 2018. All rights reserved. Designed & developed by ",
+    "COPYRIGHT_PART_B": "Decartes Chain"
+}

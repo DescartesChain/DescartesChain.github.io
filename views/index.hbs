@@ -1,0 +1,927 @@
+{{#> layouts/base }}
+  {{#*inline "content-block"}}
+    <header id="intro">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+
+      <nav id="header_wrapper">
+        <div id="header" class="clearfix">
+          <div class="row">
+              <div class="twelvecol">
+                  <a href="en.html" id="logo"><img src="images/logo_en.png"></a>
+
+                  <ul id="nav">
+                      <li>
+                          <a href="#container">{{ translation.HOME }}</a>
+                      </li>
+                      <li>
+                          <a href="/miner">{{ translation.MINER }}</a>
+                      </li>
+                      <li>
+                          <a href="#showcase">{{ translation.APPLICATIONS }}</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/DescartesChain">{{ translation.TECHNOLOGY }}</a>
+                      </li>
+                      <li>
+                          <a href="#features">{{ translation.ROADMAP }}</a>
+                      </li>
+                      <li>
+                          <a href="#pricing">{{ translation.TEAM }}</a>
+                      </li>
+                      <li id="i18n"><a href="/?clang=zh">中文</a></li>
+                      <li id="i18n"><a href="/?clang=en">English</a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="home">
+          <div class="home_box bounce_fade">
+              <span class="slider_text1">{{ translation.PROJECT_NAME }}</span>
+              <span class="slider_text2">{{ translation.SLOGON }}</span>
+              <a href="./white-paper.pdf" class="slider_text3"><i class="fa fa-th-large"></i>&nbsp;{{ translation.WHITE_PAPER }}</a>
+              <a href="#" class="slider_text4"><i class="fa fa-money"></i>&nbsp;{{ translation.TOKEN_WALLET }}</a>
+          </div>
+      </div>
+    </header>
+
+    <section  class="nine_section_wrapper">
+        <!--begin nine_section -->
+        <div class="nine_section">
+            <div class="row">
+                <div class="twelvecol">
+                    <div class="sixcol last right_fade">
+                        <img src="images/logo_txt_en.png" alt="picture">
+                    </div>
+                    <div class="sixcol padding_top left_fade">
+                        <div class="index_txt">
+                        <p style="margin-top: 40px;margin-bottom:15px;">{{ translation.INTRODUCTION }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="features_wrapper" style="background:url(images/index21.jpg) no-repeat center;background-size:cover;background-attachment:fixed">
+
+            <!-- begin features_box -->
+            <div class="features_box index_txt">
+                  <div class="index_title">{{ translation.TITLE_APPLICATIONS }}</div>
+                <!-- begin row -->
+                <div class="row">
+
+                    <!-- begin twelvecol -->
+                    <div class="twelvecol">
+
+                        <!--begin fourcol -->
+                        <div class="fourcol padding_top_large left_fade">
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+                                <div class="text_align_right">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-laptop"></i></span>{{ translation.FEATURE_01_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_01_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+                                <div class="text_align_right">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-cog"></i></span>{{ translation.FEATURE_02_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_02_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+                                <div class="text_align_right">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-camera-retro"></i></span>{{ translation.FEATURE_03_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_03_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                        </div>
+                        <!--end fourcol -->
+
+                        <!--begin fourcol -->
+                        <!--<div class="fourcol nodisplay up_fade">
+
+                            <img src="images/ipad.png" alt="Picture">
+
+                        </div>-->
+                        <!--end fourcol -->
+
+                        <!--begin fourcol -->
+                        <div class="fourcol last padding_top_large right_fade">
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+
+                                <div class="text_align_left">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-heart"></i></span>{{ translation.FEATURE_04_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_04_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+
+
+                                <div class="text_align_left">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-umbrella"></i></span>{{ translation.FEATURE_05_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_05_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                            <!--begin features_item -->
+                            <div class="features_item">
+
+                                <div class="text_align_left">
+                                    <h4 class="small_margins"><span class="icon"><i class="fa fa-comments"></i></span>{{ translation.FEATURE_06_TITLE }}</h4>
+                                    <p>{{ translation.FEATURE_06_CONTENT }}</p>
+                                </div>
+
+                            </div>
+                            <!--end features_item -->
+
+                        </div>
+                        <!--end fourcol -->
+
+                    </div>
+                    <!-- end twelvecol -->
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end features_box -->
+    </section>
+
+    <section id="services" class="info_white_wrapper">
+
+        <!--begin info_white -->
+        <div class="info_white bounce_fade">
+            <h3 class="index_title">{{ translation.TITLE_ARCH }}</h3>
+            <div class="index_img"><img class="tech" src="images/tech.png"></div>
+        </div>
+        <!--end info_white -->
+
+    </section>
+
+    <section class="nine_section_wrapper" style="background:#D6E0FC">
+        <!--begin nine_section -->
+        <div class="nine_section" style="background:none;">
+            <!--begin row -->
+            <div class="row">
+                <!--begin twelvecol -->
+                <div class="twelvecol">
+                    <!--begin sixcol -->
+                    <div class="sixcol last right_fade">
+                        <img src="images/index02.png" alt="picture">
+                    </div>
+                    <!--end sixcol -->
+                    <!--begin sixcol -->
+                    <div class="sixcol padding_top left_fade">
+                        <div class="index_title color_333 text_align_left">{{ translation.TITLE_ARCH }}</div>
+                        <div class="index_txt">
+                            <ul class="index_ul_txt">
+                                <li><p><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>{{ translation.ECOSYSTEM_ITEM_1 }}</p></li>
+                                <li><p><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>{{ translation.ECOSYSTEM_ITEM_2 }}</p></li>
+                                <li><p><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>{{ translation.ECOSYSTEM_ITEM_3 }}</p></li>
+
+                            </ul>
+                        </div>
+                        <!--begin sixcol -->
+                        <!--<div class="sixcol">
+
+                            <ul>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Sed ut perspiciatis und lorem omnis iste.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam ets voluptatem quia.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Solemnes fiat lorem din futurum netsum.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam ets voluptatem quia.</li>
+                            </ul>
+
+                        </div>-->
+                        <!--end sixcol -->
+
+                        <!--begin sixcol -->
+                        <!--<div class="sixcol last">
+
+                            <ul>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Sed ut perspiciatis und lorem omnis iste.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam ets voluptatem quia.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Paris clarits, laris lorem netsum magnas.</li>
+                                <li><i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam ets voluptatem quia.</li>
+                            </ul>
+
+                        </div>-->
+                        <!--end sixcol -->
+
+                    </div>
+                    <!--end sixcol -->
+
+                </div>
+                <!--end twelvecol -->
+
+            </div>
+            <!--end row -->
+
+        </div>
+        <!--end nine_section -->
+
+    </section>
+
+    <section id="features" class="features_wrapper mm">
+        <!-- begin features_box -->
+        <div class="features_box index_txt">
+            <div class="index_title color_333">{{ translation.TITLE_DEV_PLAN }}</div>
+            <!-- begin row -->
+            <div class="row">
+
+                <!-- begin twelvecol -->
+                <div class="twelvecol index_develop_list">
+
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fl left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <p class="time">{{ translation.DEV_PLAN_01_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_01_GOAL }}</p>
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol right_fr last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-users"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_02_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_02_GOAL }}</p>
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-modx"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_03_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_03_GOAL }}</p>
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-cogs"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_04_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_04_GOAL }}</p>
+
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-flag"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_05_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_05_GOAL }}</p>
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-sort-amount-asc"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_06_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_06_GOAL }}</p>
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item on">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-copy"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_07_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_07_GOAL }}</p>
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-file-text-o"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_08_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_08_GOAL }}</p>
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-sort-amount-asc"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_09_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_09_GOAL }}</p>
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!-------------------------------------->
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-line-chart"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_10_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_10_GOAL }} </p>
+
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item ">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-code"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_11_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_11_GOAL }}</p>
+
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-windows"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_12_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_12_GOAL }}</p>
+
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-line-chart"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_13_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_13_GOAL }}</p>
+
+
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade second">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_left">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-credit-card"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_14_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_14_GOAL }}</p>
+
+
+                            </div>
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol left_fade first">
+                        <!--begin features_item -->
+                        <div class="features_item">
+                            <div class="circle"></div>
+                            <div class="text_align_right">
+                                <h4 class="small_margins"><span class="icon"><i class="fa fa-btc"></i></span></h4>
+                                <p class="time">{{ translation.DEV_PLAN_15_DATE }}</p>
+                                <p>{{ translation.DEV_PLAN_15_GOAL }}</p>
+                            </div>
+
+                        </div>
+                        <!--end features_item -->
+                    </div>
+                    <!--end fourcol -->
+
+                </div>
+                <!-- end twelvecol -->
+                <div class="develop_bottom clearfix">
+                    <span class="blue_fang"><i></i></span>
+                    <span>{{ translation.FINISHED }}</span>
+                    <span class="black_fang"><i></i></span>
+                    <span>{{ translation.TO_BE_FINISHED }} </span>
+                </div>
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end features_box -->
+    </section>
+
+    <section id="pricing" class="features_wrapper" style="background:url(images/index25.jpg) no-repeat center;background-size:cover;background-attachment:fixed">
+
+        <!-- begin features_box -->
+        <div class="features_box index_txt">
+            <div class="index_title">{{ translation.TITLE_TEAM }}</div>
+            <!-- begin row -->
+            <div class="row">
+
+                <!-- begin twelvecol -->
+                <div class="twelvecol">
+                    <div class="first_ceo">
+                        <div class="showcase_item">
+
+                            <span class="dropcaps_showcase"><img src="images/img01.png"></span>
+
+                            <div class="text_align_left">
+                                <h4 class="small_margins">{{ translation.CEO_NAME }}</h4>
+                                <p>{{ translation.CEO_INTRO }}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end twelvecol -->
+                <!-- begin twelvecol -->
+                <div class="twelvecol">
+
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+
+                        <div class="showcase_item">
+
+                            <span class="dropcaps_showcase"><img src="images/02.jpg"></span>
+
+                            <div class="text_align_left">
+                                <h4 class="small_margins">{{ translation.CTO_NAME }}</h4>
+                                <p>{{ translation.CTO_INTRO }}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--end fourcol -->
+
+
+
+                    <!--begin fourcol -->
+                    <div class="fourcol last padding_top_large right_fade">
+
+                        <div class="showcase_item">
+
+                            <span class="dropcaps_showcase"><img src="images/03.png"></span>
+
+                            <div class="text_align_left">
+                                <h4 class="small_margins">{{ translation.COO_NAME }}</h4>
+                                <p>{{ translation.COO_INTRO }}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--end fourcol -->
+
+                </div>
+                <!-- end twelvecol -->
+                <div class="index_title mar_50">{{ translation.TITLE_DEV_TEAM }}</div>
+                <!-- begin twelvecol -->
+                <div class="twelvecol index_team_img">
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/04.jpeg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_01 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/05.jpeg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_02 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/06.jpeg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_03 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/07.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_04 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/08.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_05 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/09.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_06 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/10.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_07 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/11.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_08 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/12.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_09 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/13.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_10 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/14.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_11 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                    <!--begin fourcol -->
+                    <div class="fourcol padding_top_large left_fade">
+                        <div class="showcase_item">
+                            <img src="images/15.jpg">
+                            <div class="text_align_center">
+                                <h4 class="small_margins">{{ translation.TEAM_MEMBER_12 }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end fourcol -->
+                </div>
+                <!-- end twelvecol -->
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end features_box -->
+
+    </section>
+
+    <section class="nine_section_wrapper">
+
+        <!--begin nine_section -->
+        <div class="nine_section up_fade">
+                <div class="index_title color_333">{{ translation.TITLE_PARTNER }}</div>
+            <!--begin row -->
+            <div class="row">
+
+                <!--begin twelvecol -->
+                <div class="twelvecol">
+                    <!--begin price_item -->
+                    <div class="threecol price_item li">
+                        <a href="https://www.microsoft.com/ja-jp/"><img src="images/index15.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item li">
+                        <a href="https://www.cisco.com/"><img src="images/index16.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item li">
+                        <a href="https://www.jpmorgan.com/country/US/EN/jpmorgan"><img src="images/index17.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item li">
+                        <a href="https://www.ibm.com/us-en/"><img src="images/index18.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item">
+                        <a href="http://www.imf.org/external/index.htm"><img src="images/index11.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item">
+                        <a href="https://www.ed.ac.uk/"><img src="images/index12.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item">
+                        <a href="https://uconn.edu/"><img src="images/index13.jpg"></a>
+                    </div>
+                    <!--end price_item -->
+                    <!--begin price_item -->
+                    <div class="threecol price_item">
+                        <a href="https://www.u-tokyo.ac.jp/en/index.html"><img src="images/u-tokyo.png"></a>
+                    </div>
+                    <!--end price_item -->
+                </div>
+                <!--end twelvecol -->
+
+            </div>
+            <!--end row -->
+
+        </div>
+        <!--end nine_section -->
+
+    </section>
+
+    <section id="subscribe" class="newsletter_wrapper">
+
+        <!--begin info_transparent -->
+        <div class="info_transparent bounce_fade">
+            <h3>{{ translation.TITLE_JOIN_US }}</h3>
+        </div>
+        <!--end info_transparent -->
+
+        <!-- begin newsletter_box -->
+        <div class="newsletter_box">
+
+            <!-- begin row -->
+            <div class="row">
+
+                <!-- begin twelvecol -->
+                <div class="twelvecol">
+
+                    <!--begin newsletter form -->
+                    <div class="contact_form_wrap bounce_fade">
+                        <p class="success_box" style="display:none;">{{ translation.SUBSCRIBE_MSG }}</p>
+                        <form id="contact-form" class="contact_form" action="contact.php" method="post">
+                            <input id="email" name="cf_email" placeholder="Email adress:" />
+                            <input type="submit" value="Subscribe" id="submit-button" />
+                        </form>
+                    </div>
+                    <!--end newsletter form -->
+
+                </div>
+                <!-- end twelvecol -->
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end newsletter_box -->
+
+    </section>
+  {{/inline}}
+
+  {{#*inline "modal-block"}}
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <a href="./minerEn.html">
+                <img src="images/poster.jpg" id="poster">
+          </a>
+          <!-- <div style="width: 100px;height: 50px;border: 1px solid red;position: absolute;bottom: 10px;"></div> -->
+        </div>
+    </div>
+  {{/inline}}
+
+  {{#*inline "scripts-block"}}
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/modernizr-2.6.1.min.js"></script>
+    <script src="js/conditional.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <!-- begin jquery.sticky script-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script>
+        $(window).load(function(){
+          $("#header_wrapper").sticky({ topSpacing: 0 });
+        });
+    </script>
+    <!-- end jquery.sticky script-->
+
+    <!-- begin menu scrollTo script-->
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript">
+    (function($){
+      $(document).ready(function() {
+      /* This code is executed after the DOM has been completely loaded */
+
+        $("#nav li a").click(function(e){
+
+          var full_url = this.href;
+          var parts = full_url.split("#");
+          var trgt = parts[1];
+          var target_offset = $("#"+trgt).offset();
+          var target_top = target_offset.top;
+
+          $('html,body').animate({scrollTop:target_top -80}, 1000);
+            return false;
+
+        });
+
+      });
+    })(jQuery);
+    </script>
+    <!-- end menu scrollTo script-->
+
+      <!-- begin menu color script-->
+    <script src="js/jquery.nav.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#nav').onePageNav({
+      filter: ':not(.external)',
+      scrollThreshold: 0.25
+      });
+    });
+    var modal = document.getElementById('myModal');
+          var span = document.getElementsByClassName("close")[0];
+          $(document).ready(function() {
+              modal.style.display = "block";
+              // console.log('111')
+          })
+          setTimeout(function(){
+              modal.style.display = "none";
+              console.log(modal.style.display)
+          },40000)
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+    </script>
+      <!-- end menu color script-->
+
+      <!--begin shrink header script -->
+      <script>
+    $(function(){
+    var shrinkHeader = 50;
+      $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+        if ( scroll >= shrinkHeader ) {
+          $('#header_wrapper').addClass('shrink');
+        }
+        else {
+          $('#header_wrapper').removeClass('shrink');
+        }
+      });
+    function getCurrentScroll() {
+      return window.pageYOffset;
+      }
+    });
+    </script>
+    <!--end shrink header script -->
+  {{/inline}}
+{{/layouts/base}}

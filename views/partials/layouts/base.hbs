@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+  <title>{{ translation.TITLE }}</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="lib/css/ie.css" type="text/css" media="screen" /><![endif]-->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+      $(function(){
+          var a=$(window).height()
+          $('#intro').css('height',a)
+      });
+  </script>
+
+  {{#> css-block }}
+  {{/css-block}}
+</head>
+
+<body>
+
+  {{#> content-block }}
+  {{/content-block }}
+
+  {{> includes/footer }}
+
+  {{#> modal-block }}
+  {{/modal-block }}
+
+
+  {{#> scripts-block }}
+  {{/scripts-block }}
+</body>
+</html>
