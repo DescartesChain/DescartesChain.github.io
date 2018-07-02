@@ -39,7 +39,7 @@ Page = {
 
             if( localStorage.getItem('token') != null && 
                 localStorage.getItem('token') != "" ) {
-                window.location = '/'
+                window.location = '/miner'
             }
         })
         
