@@ -204,17 +204,23 @@ p, ul, ol, dl, table, fieldset, blockquote {
    General Layout
    ======================================================= */
 
-body {
+body,html{
 	font-size: 13px;
 	color: #555;
 	background-color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
+	overflow-x:hidden;
+	width: 100%;
 }
 
 #container{
-	position:relative;
-	overflow:hidden;
+	height: auto;
+	position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    overflow: hidden;
 }
 
 .nine_section_wrapper{

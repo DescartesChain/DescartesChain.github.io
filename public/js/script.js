@@ -179,7 +179,8 @@ jQuery(window).load(function(){
 				});
 				$('#wt_responsive_nav_wrap').click(function(){
 					$('#container').removeClass('show_responsive_nav');
-					$('body').css({'overflow': "visible"})
+					$('#container').css({'height':''})
+					$('body').css({'overflow': ""})
 					console.log($('#container').cssText)
 				})
 				// start responsive one page navigation	
