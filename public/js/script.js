@@ -163,27 +163,30 @@ jQuery(window).load(function(){
 				
 				show_menu.click(function() {
 					// console.log(container)
+					document.body.scrollTop = document.documentElement.scrollTop = 0;
 					if(container.is('.show_responsive_nav')) {
+						
 						container.removeClass('show_responsive_nav');
 						container.css({'height':"auto"});
-						
-						// console.log($('body'))
-						// console.log('1111')
 					} else {
 						// console.log('1111')
+						
 					$('body').css({'overflow': "hidden"})
 						container.addClass('show_responsive_nav');
 						set_height();
 					}
 					return false;
 				});
-				
+				$('#wt_responsive_nav_wrap').click(function(){
+					$('#container').removeClass('show_responsive_nav');
+					$('body').css({'overflow': "visible"})
+					console.log($('#container').cssText)
+				})
 				// start responsive one page navigation	
 				if (one_page_item) {			
 					menu_item.click(function(e) {
 						
-						if(container.is('.show_responsive_nav')) {			
-							console.log('1111')			
+						if(container.is('.show_responsive_nav')) {				
 							container.removeClass('show_responsive_nav');
 							container.css({'height':"auto"});
 								var full_url = this.href;
@@ -200,6 +203,7 @@ jQuery(window).load(function(){
 				// end responsive one page navigation
 				
 				hide_menu.click(function() {
+					// document.documentElement.scrollTop = 0;
 					// console.log('1111')
 					$('body').css({'overflow': "visible"})
 					container.removeClass('show_responsive_nav');
