@@ -36,7 +36,7 @@ Page = {
     },
 
     loadVouchers: function() {
-        // 加载所有地址
+        // 加载所有未使用的兑换码
         var jqxhr = $.ajax({
             type: "GET",
             url:  Page.api_server +  '/user/'+ Page.currentUser._id + '/unused_voucherlist',
@@ -47,11 +47,10 @@ Page = {
             Page.vouchers = data;
             var element = '';
             data.forEach(function(voucher) {
-                element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher" value="'+  voucher.code +'"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
+                element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher" value="'+  voucher._id +'"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
             });
 
             $( element ).insertBefore("#voucherInput");
-
         })
         
         jqxhr.fail(function(error){
@@ -70,12 +69,26 @@ Page = {
         // 添加成功，重新加载数据
         jqxhr.done(function(data){
             Page.addresses = data;
+
+            var element = '';
+
             data.forEach(function(item) {
-                $("#addressTable tr:last")
-                .after("<tr><td>"+ item.receiver +"</td><td>"+ item.phone +"</td><td>" + item.address +"</td><tr>")
+                element += '<li>' +
+                    '<div class="li_first fl text_overflow"><div class="span">姓名</div>'+ item.receiver +'</div>' +
+                    '<div class="li_second fl text_overflow"><div class="span">电话</div>'+ item.phone+'</div>' +
+                    '<div class="li_third"><div class="span">地址</div>' +
+                        item.address +
+                    '</div>' +
+                    '<label class="demo--label">' +
+                        '<div class="demo--label_con">' +
+                            '<input class="demo--radio" type="radio" name="address" value="'+ item._id +'">' +
+                            '<span class="demo--radioInput"></span>'+
+                        '</div>'+
+                    '</label>' +
+                '</li>'
             });
             
-            console.log('this is a address list', data)
+            $(element). insertBefore("#addressItem");
         })
         
         jqxhr.fail(function(error){
@@ -123,7 +136,7 @@ Page = {
         // load all vouchers
         var jqxhr = $.ajax({
             type: "GET",
-            url:  Page.api_server +  '/user/5b389115b9a8c12f8cc243e3/voucherlist',
+            url:  Page.api_server +  '/user/'+ Page.currentUser._id + '/unused_voucherlist',
         })
 
         // 添加成功，重新加载数据
@@ -156,33 +169,41 @@ Page = {
         // pay with vocher
         event.preventDefault();
 
-        var selectedVoucher = $('input[name=voucher]:checked', '#voucherList').val()
-        console.log(selectedVoucher);
+        var selectedVoucherId = $('input[name=voucher]:checked', '#voucherList').val()
+        console.log(selectedVoucherId);
 
-        var voucherId = Page.getVoucherIdByCode(selectedVoucher);
-        console.log(voucherId);
+        var selectedAddressId =  $('input[name=address]:checked', '#addressList').val()
+        console.log(selectedAddressId);
 
-        // just create a new order
-        var jqxhr = $.ajax({
-            type: "POST",
-            url:  Page.api_server +  '/order',
-            data: {
-                customerId: Page.currentUser._id,
-                voucherId: voucherId,
-                addressId: Page.addresses[0]._id
-            },
-        })
         
-        // 添加成功，重新加载数据
-        jqxhr.done(function(data){
-            console.log(data)
+        if(selectedAddressId == null || selectedAddressId == undefined) {
+            return alert('You must specify your address');
+        }
+        else if(selectedVoucherId == null || selectedVoucherId == undefined) {
+            return alert('You must specify your voucher');
+        } else {
+            // just create a new order
+            var jqxhr = $.ajax({
+                type: "POST",
+                url:  Page.api_server +  '/order',
+                data: {
+                    customerId: Page.currentUser._id,
+                    voucherId: selectedVoucherId,
+                    addressId: selectedAddressId
+                },
+            })
+            
+            // 添加成功，重新加载数据
+            jqxhr.done(function(data){
+                console.log(data)
 
-            window.location = '/order_detail?id=' + data._id;
-        })
-        
-        jqxhr.fail(function(error){
-            console.log(error.responseJSON.message)
-        })
+                window.location = '/order_detail?id=' + data._id;
+            })
+            
+            jqxhr.fail(function(error){
+                console.log(error.responseJSON.message)
+            })
+        }
     }
 }
 

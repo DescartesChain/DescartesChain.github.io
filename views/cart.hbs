@@ -78,8 +78,8 @@
                     <div class="li_second fl">{{ translation.CART_RECEIVER_PHONE }}</div>
                     <div class="li_third">{{ translation.CART_RECEIVER_ADDRESS }}</div>
                 </div>
-                <ul class="cart_address_detail_ul">
-                    <li>
+                <ul id="addressList" class="cart_address_detail_ul">
+                    {{!-- <li>
                         <div class="li_first fl text_overflow"><div class="span">姓名</div>skdhj</div>
                         <div class="li_second fl text_overflow"><div class="span">电话</div>13683801224</div>
                         <div class="li_third"><div class="span">地址</div>
@@ -93,8 +93,8 @@
                                 <span class="demo--radioInput"></span>
                             </div>
                         </label>
-                    </li>
-                    <li>
+                    </li> --}}
+                    {{!-- <li>
                         <div class="li_first fl text_overflow"><div class="span">姓名</div>skdhj</div>
                         <div class="li_second fl text_overflow"><div class="span">电话</div>13683801224</div>
                         <div class="li_third"><div class="span">地址</div>郑州市中原区桐柏路</div>
@@ -104,7 +104,8 @@
                                 <span class="demo--radioInput"></span>
                             </div>
                         </label>
-                    </li>
+                    </li> --}}
+                    <li id="addressItem" style="display:none;"></li>
                 </ul>
                  <!--新增-->
             </div>
