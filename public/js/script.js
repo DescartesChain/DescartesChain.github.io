@@ -162,10 +162,16 @@ jQuery(window).load(function(){
 				// end hiding all sub-menus	
 				
 				show_menu.click(function() {
+					// console.log(container)
 					if(container.is('.show_responsive_nav')) {
 						container.removeClass('show_responsive_nav');
 						container.css({'height':"auto"});
+						
+						// console.log($('body'))
+						// console.log('1111')
 					} else {
+						// console.log('1111')
+					$('body').css({'overflow': "hidden"})
 						container.addClass('show_responsive_nav');
 						set_height();
 					}
@@ -175,7 +181,9 @@ jQuery(window).load(function(){
 				// start responsive one page navigation	
 				if (one_page_item) {			
 					menu_item.click(function(e) {
-						if(container.is('.show_responsive_nav')) {						
+						
+						if(container.is('.show_responsive_nav')) {			
+							console.log('1111')			
 							container.removeClass('show_responsive_nav');
 							container.css({'height':"auto"});
 								var full_url = this.href;
@@ -192,6 +200,8 @@ jQuery(window).load(function(){
 				// end responsive one page navigation
 				
 				hide_menu.click(function() {
+					// console.log('1111')
+					$('body').css({'overflow': "visible"})
 					container.removeClass('show_responsive_nav');
 					container.css({'height':"auto"});
 					return false;
@@ -256,3 +266,19 @@ jQuery(window).load(function(){
 				
 	});
 })(jQuery);
+// 语言切换
+	$(document).ready(function(){
+		var language = window.location.href.split('=')[1]
+		if(language == 'zh'){
+			$('#i18n')[0].innerText = 'English'
+		}else{
+			$('#i18n')[0].innerText = '中文'
+		}
+		$('#i18n').click(function(){
+			if(language == "zh"){
+				window.location.href = 'index?clang=en'
+			}else{
+				window.location.href = 'index?clang=zh'
+			}
+		})
+	})
