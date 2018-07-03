@@ -37,7 +37,7 @@
                             <div class="pro_td">
                                 <img src="images/pro11.jpg">
                                 <div class="txt">
-                                    <div class="name">{{ translation.CART_PRODUCT_NAME }}</div>
+                                    <div class="tit">{{ translation.CART_PRODUCT_NAME }}</div>
                                     <div class="c">{{ translation.CART_PRODUCT_INTRO }}</div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                     <li>收货人地址：河南省郑州市中原区桐柏路</li>
                     <li>收货人地址：河南省郑州市中原区桐柏路</li>
                 </ul>-->
-                <table id="addressTable" class="responsive" valign="middle">
+               <!--<table id="addressTable" class="responsive" valign="middle">
                     <thead>
                     <tr>
                         <th>{{ translation.CART_RECEIVER_NAME }}</th>
@@ -71,10 +71,46 @@
                     <tbody>
 
                     </tbody>
-                </table>
+                </table>-->
+                <!--新增-->
+                 <div class="cart_address_detail_t clear_after">
+                    <div class="li_first fl">{{ translation.CART_RECEIVER_NAME }}</div>
+                    <div class="li_second fl">{{ translation.CART_RECEIVER_PHONE }}</div>
+                    <div class="li_third">{{ translation.CART_RECEIVER_ADDRESS }}</div>
+                </div>
+                <ul class="cart_address_detail_ul">
+                    <li>
+                        <div class="li_first fl text_overflow"><div class="span">姓名</div>skdhj</div>
+                        <div class="li_second fl text_overflow"><div class="span">电话</div>13683801224</div>
+                        <div class="li_third"><div class="span">地址</div>
+                            郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑
+                            州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路郑州市中
+                            原区桐柏路郑州市中原区桐柏路郑州市中原区桐柏路
+                        </div>
+                        <label class="demo--label">
+                            <div class="demo--label_con">
+                                <input class="demo--radio" type="radio" name="demo-radio">
+                                <span class="demo--radioInput"></span>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="li_first fl text_overflow"><div class="span">姓名</div>skdhj</div>
+                        <div class="li_second fl text_overflow"><div class="span">电话</div>13683801224</div>
+                        <div class="li_third"><div class="span">地址</div>郑州市中原区桐柏路</div>
+                        <label class="demo--label">
+                            <div class="demo--label_con">
+                                <input class="demo--radio" type="radio" name="demo-radio">
+                                <span class="demo--radioInput"></span>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+                 <!--新增-->
             </div>
+            
             <div class="cart_button text_align_right">
-                <a class="but red" href="">{{ translation.CART_PAY_DEFAULT }}</a>
+                <a class="but red cd-popup-trigger3" href="javascript:void(0);">{{ translation.CART_PAY_DEFAULT }}</a>
                 <a class="but red cd-popup-trigger2" href="javascript:void(0);">{{ translation.CART_PAY_VOUCHER }}</a>
             </div>
         </div>
@@ -112,10 +148,26 @@
         </div>
     </div>
 
-
+<!--支付弹出-->
+<div class="cd-popup3">
+    <div class="cd-popup-container1">
+        <div class="money_title text_align_left">
+            <div class="t">您想要立即支付吗？</div>
+            <div class="c">您将需要选择一个安全的方式来完成支付！</div>
+        </div>
+        <div class="money_con">
+            <div class="tip_logo"><img src="images/721.png"></div>
+           <div class="tip"><p>像MetaMask这样的安全钱包即是完美之地。</p><p>同时您也可以通过钱包进入游戏（无需另设密码）</p></div>
+            <a class="money_but" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">从Chrome网上商店获取</a>
+               <div class="tips">本功能只适合在非移动端使用</div>
+        </div>
+        <a href="#0" class="cd-popup-close">X</a>
+    </div>
+</div>
+<!--支付弹出-->
     <!--支付表单-->
     <div class="cd-popup2">
-        <div class="cd-popup-container1">
+        <div class="cd-popup-container1 new_height7031">
             <div class="dui_huan">
                 <div class="dui_huan_title">{{ translation.CART_PANEL_VOUCHER_TITLE }} </div>
                 <div class="dui_huan_con">
