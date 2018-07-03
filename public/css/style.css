@@ -2762,3 +2762,9 @@ table.responsive th{font-size:16px;line-height:40px;}
 @media (max-width:769px){
 	.vli .wrapper img{display:block;margin:60px auto 30px auto;;width:150px;height:150px;}
 }
+
+
+/*******************************个人中心新加*****************/
+.profile_main .img{position:relative;width:160px;height:160px;border-radius:100%;overflow:hidden;margin:0 auto 15px auto;}
+.set_quit_new{position:absolute;left:0px;bottom:0px;height:32px;background:rgba(0,0,0,.6);text-align:center;);font-size:12px;color:#fff;width:100%;line-height:32px;}
+.set_quit_new i{display:inline;margin-right:5px;}
