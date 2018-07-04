@@ -45,10 +45,16 @@ Page = {
         // 添加成功，重新加载数据
         jqxhr.done(function(data){
             Page.vouchers = data;
-            var element = '';
-            data.forEach(function(voucher) {
-                element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher" value="'+  voucher._id +'"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
-            });
+
+            var element = '<li class="clear_after"><div>You don\'t have a voucher yet, go <a href="/profile" style="font-size: 1.2rem; color:#3DACF7; "><strong>add</strong></a> now!</div></li>';
+
+            if(data.length == 0 ) {
+                element + ""
+            } else {
+                data.forEach(function(voucher) {
+                    element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher" value="'+  voucher._id +'"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
+                });
+            }
 
             $( element ).insertBefore("#voucherInput");
         })
