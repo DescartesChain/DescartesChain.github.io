@@ -7,8 +7,6 @@ Page = {
     init: function(api_server) {
         Page.api_server = api_server;
 
-        Page.api_server = api_server;
-
         var jqxhr = $.ajax({
             type: "get",
             url:  api_server +  '/profile',
@@ -26,6 +24,7 @@ Page = {
             $("#profile_name").text(Page.currentUser.username);
 
             Page.loadOrders();
+            Page.loadEthOrders();
             Page.loadVouchers();
             Page.bindEvents();
         })
@@ -50,10 +49,35 @@ Page = {
         // 添加成功，重新加载数据
         jqxhr.done(function(data){
 
+            console.log(data)
             data.forEach(function(order) {
                 var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"><div class="txt"><div class="tit"><a href="/order_detail?id=' + order._id + '"> First generation high performance cartesian mining machine </a></div></div></div></td><td class="num">1</td><td class="price_total">$1820</td></tr>'
 
+                console.log('wtf')
                 $("#orderTable tr:last").after(tr)
+                // element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
+            });
+        })
+        
+        jqxhr.fail(function(error){
+            console.log(error.responseJSON.message)
+        })
+    },
+
+    loadEthOrders: function() {
+        var jqxhr = $.ajax({
+            type: "GET",
+            url:  Page.api_server +  '/user/'+ Page.currentUser._id + '/txhashlist',
+        })
+        
+        // 添加成功，重新加载数据
+        jqxhr.done(function(data){
+
+            data.forEach(function(txHash) {
+                console.log(txHash)
+                var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"></div></td><td class="num"><a href="https://etherscan.io/tx/' + txHash + '"> '+txHash+' </a></td></tr>'
+
+                $("#ethOrderTable tr:last").after(tr)
                 // element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
             });
         })

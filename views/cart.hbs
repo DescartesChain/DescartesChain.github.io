@@ -111,7 +111,8 @@
             </div>
             
             <div class="cart_button text_align_right">
-                <a class="but red cd-popup-trigger3" href="javascript:void(0);">{{ translation.CART_PAY_DEFAULT }}</a>
+                {{!-- <a class="but red cd-popup-trigger3" href="javascript:void(0);">{{ translation.CART_PAY_DEFAULT }}</a> --}}
+                <button id="btnETHPay" class="but red">{{ translation.CART_PAY_DEFAULT }}</button>
                 <a class="but red cd-popup-trigger2" href="javascript:void(0);">{{ translation.CART_PAY_VOUCHER }}</a>
             </div>
         </div>
@@ -149,27 +150,7 @@
         </div>
     </div>
 
-<!--支付弹出-->
-<div class="cd-popup3">
-    <div class="cd-popup-container1">
-        <div class="money_title text_align_left">
-            <div class="t">Would you like to pay immediately?</div>
-            <div class="c">You will need to choose a safe way to complete the payment!
-</div>
-        </div>
-        <div class="money_con">
-            <div class="tip_logo"><img src="images/721.png"></div>
-           <div class="tip"><p>A secure wallet like MetaMask is the perfect place to be.
-</p><p>You can also enter the game through your wallet (no extra password required)
-</p></div>
-            <a class="money_but" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">从Chrome网上商店获取</a>
-               <div class="tips">This feature is only suitable for use on non-mobile terminals
-</div>
-        </div>
-        <a href="#0" class="cd-popup-close">X</a>
-    </div>
-</div>
-<!--支付弹出-->
+    <!--支付弹出-->
     <!--支付表单-->
     <div class="cd-popup2">
         <div class="cd-popup-container1 new_height7031">
@@ -186,6 +167,26 @@
                 </div>
             </div>
             <a href="#0" class="cd-popup-close">X</a>
+        </div>
+    </div>
+
+    <!--支付弹出-->
+    <div class="cd-popup3">
+        <div class="cd-popup-container1">
+            <div class="money_title text_align_left">
+                <div class="t">Would you like to pay immediately?</div>
+                <div class="c">You will need to choose a safe way to complete the payment!</div>
+            </div>
+            <div class="money_con">
+                <div class="tip_logo"><img src="images/721.png"></div>
+                <div class="tip">
+                    <p>A secure wallet like MetaMask is the perfect place to be.</p>
+                    <p>You can also enter the game through your wallet (no extra password required)</p>
+                </div>
+                <a class="money_but" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">从Chrome网上商店获取</a>
+                <div class="tips">This feature is only suitable for use on non-mobile terminals</div>
+            </div>
+        <a href="#0" class="cd-popup-close">X</a>
         </div>
     </div>
     
@@ -348,6 +349,8 @@
 
 
 <!--end shrink header script -->
+    <script src="js/eth/web3.min.js"></script>
+    <script src="js/eth/ethpay.js"></script>
     <script src="js/pages/cart.js"></script>
   {{/inline}}
 {{/layouts/base}}
