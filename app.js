@@ -62,4 +62,15 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+let port =  2000;
+
+
+app.listen(port, (err, msg) => {
+  if(err) {
+    console.log('wtf')
+  } else {
+    console.log('ok')
+  }
+})
+
 module.exports = app;

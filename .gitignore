@@ -2,4 +2,5 @@ backup
 node_modules
 .idea
 .project
+.package-lock.json
 public/js/preload.min.js
