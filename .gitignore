@@ -3,4 +3,3 @@ node_modules
 .idea
 .project
 public/js/preload.min.js
-package-lock.json
