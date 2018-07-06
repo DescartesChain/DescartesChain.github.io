@@ -255,7 +255,7 @@ Page = {
                                                 url:  Page.api_server +  '/txhash',
                                                 data: { 
                                                      customer: Page.currentUser._id,
-                                                     newTxHash: hash
+                                                     txHash: hash
                                                 },
                                             })
                                             

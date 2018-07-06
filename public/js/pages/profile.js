@@ -73,9 +73,9 @@ Page = {
         // 添加成功，重新加载数据
         jqxhr.done(function(data){
 
-            data.forEach(function(txHash) {
-                console.log(txHash)
-                var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"></div></td><td class="num"><a href="https://etherscan.io/tx/' + txHash + '"> '+txHash+' </a></td></tr>'
+            data.forEach(function(item) {
+                console.log(item)
+                var tr = '<tr><td class="pro_img"><div class="pro_td"><img src="images/pro11.jpg"></div></td><td class="num"><a href="https://etherscan.io/tx/' + item.txHash + '"> '+item.txHash+' </a></td></tr>'
 
                 $("#ethOrderTable tr:last").after(tr)
                 // element += '<li class="clear_after"><div class="label"><input type="radio" class="radio_li" name="voucher"></div><div class="li_r"><span class="dui_huan_num">'+ voucher.code +'</span></div></li>'
