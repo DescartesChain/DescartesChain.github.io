@@ -49,10 +49,23 @@ Page = {
         })
         
         jqxhr.fail(function(error){
-            console.log(error.responseJSON)
+            var title = error.responseJSON.message.split(':')[2].split('_1')[0]
+            $('#judgeUser').css('display','block')
+            if(title == " username"){
+                $('#judgeUser').html('The username has been registered')
+            }else if(title == ' phone'){
+                $('#judgeUser').html('The cell phone number has been registered')
+            }else{
+                $('#judgeUser').html('The mailbox has been registered')
+            }
         })
     }
 }
 
 
-$(document).ready( function(){ Page.init( api_server ); })
+$(document).ready( function(){ 
+    Page.init( api_server ); 
+    $('input').focus(function(){
+        $('#judgeUser').css('display','none')
+    })
+})

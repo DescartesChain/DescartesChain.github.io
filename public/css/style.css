@@ -2768,3 +2768,6 @@ table.responsive th{font-size:16px;line-height:40px;}
 .profile_main .img{position:relative;width:160px;height:160px;border-radius:100%;overflow:hidden;margin:0 auto 15px auto;}
 .set_quit_new{position:absolute;left:0px;bottom:0px;height:32px;background:rgba(0,0,0,.6);text-align:center;);font-size:12px;color:#fff;width:100%;line-height:32px;}
 .set_quit_new i{display:inline;margin-right:5px;}
+.alertTitle{position: absolute !important;top: 50%;left: 50%;}
+.userNameTitle{width: 190px;height: 60px;border-radius: 10px;background:  #fff;line-height: 60px;text-align: center;position: relative}
+/* .userNameTitle ::after{content: ".";position: absolute;top: 19px;display: block;width: 13px;height: 16px;overflow: hidden;background: url(//mimg.127.net/hd/all2/160301_mailIndex/1604180944/img/urs_icons_163.png) -64px 0 no-repeat;text-indent: -9999px;right: -13px;} */

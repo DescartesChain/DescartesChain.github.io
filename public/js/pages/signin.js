@@ -44,10 +44,17 @@ Page = {
         })
         
         jqxhr.fail(function(error){
-            console.log(error.responseJSON)
+            $("#alertTitle").css("display","block")
+            $('p').css("display","none")
         })
     }
 }
 
 
-$(document).ready( function(){ Page.init( api_server ); })
+$(document).ready( function(){ 
+    Page.init( api_server ); 
+    $('input').focus(function(){
+        $("#alertTitle").css("display","none")
+        $('p').css("display","block")
+    })
+})
