@@ -26,7 +26,9 @@
         </div>
       </div>
     </div>-->
+ <div>
 
+ </div>
  <div class="vli">
         <div class="wrapper move">
           <div class="img_w"><img src="images/t.png"></div>
@@ -34,7 +36,7 @@
                 <form class="form2" method="" action="">
                     <h3>{{ translation.SIGNIN_TITLE }}</h3>
                     
-                
+               
                     <div class="vali">
                         <input type="text" id="username" name="" value="" class="uersname" placeholder="{{ translation.SIGNIN_USERNAME }}">
                     </div>
@@ -43,7 +45,9 @@
               
                     <div class="vali">
                         <input type="password" name="" value="" placeholder="{{ translation.SIGNIN_PASSWORD }}" class="pasw" id="password">
+                        <strong style="color:red;display:none" id="alertTitle">Account or password error</strong>
                     </div>
+                    
                    <div class="vali check_login_li">
                       <label><input class="check_li check" type="checkbox">{{ translation.SIGNIN_REMEMBER_ME }}</label>
                       <a class="login_frr_a" href="/forgot-password">{{ translation.FORGET_PASSWORD }}</a>
@@ -53,7 +57,7 @@
                         <button id="btnSignIn" class="btn">{{ translation.SIGNIN_LOGIN }}</button>
                     </div>
                     <div class="login_bottom">
-                    还没有账号，
+                     Don't have a account yet?
                         <a class="" href="/signup">{{ translation.SIGNIN_REGISTER }}</a>
                         
                     </div>
@@ -61,7 +65,11 @@
             </div>
         </div>
     </div>
-
+     {{!-- <div class="alertTitle">
+                  <div class="userNameTitle">
+                    <strong>账号或密码输入不对</strong>
+                  </div>
+                </div> --}}
   {{/inline}}
 
   {{#*inline "scripts-block" }}

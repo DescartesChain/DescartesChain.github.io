@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "SET DEBUG=www.dcar.xyz:* & nodemon ./bin/www"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "eth-sig-util": "^1.4.2",
     "express": "~4.16.0",
     "express-session": "^1.15.6",
     "gulp": "^3.9.1",

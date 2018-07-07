@@ -1,0 +1,97 @@
+{{#> layouts/base }}
+  {{#*inline "css-block"}}
+    <link rel="stylesheet" href="css/syno.css">
+    <link rel="stylesheet" href="css/products.css">
+  {{/inline}}
+
+  {{#*inline "content-block"}}
+  
+    <!--end header_wrapper -->
+    <!-----第一版------------->
+    <!--begin nine_section_wrapper -->
+    <section  class="nine_section_wrapper cart_banner_title">
+        <!--begin nine_section -->
+        <div class="nine_section"><div class="cart_banner_title_t">{{ translation.PAGE_PROMPT }}</div> </div>
+        <!--end nine_section -->
+    </section>
+    <!--end nine_section -->
+    <!--begin nine_section_wrapper -->
+    <section  class="nine_section_wrapper cart_success">
+        <!--begin nine_section -->
+        <div class="nine_section">
+            <div class="money_con">
+                    <div class="tip_logo"><img src="images/721.png"></div>
+                    <div class="tip">
+                        <h1>You haven't logged in to MetaMask</h1>
+                    </div>
+                    <div class="tips">This feature is only suitable for use on non-mobile terminals</div>
+                </div>
+
+        </div>
+        <!--end nine_section -->
+    </section>
+  {{/inline}}
+
+  {{#*inline "modal-block"}}
+
+    
+  {{/inline}}
+
+  {{#*inline "scripts-block"}}
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/modernizr-2.6.1.min.js"></script>
+    <script src="js/conditional.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <!-- begin jquery.sticky script-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script>
+        $(window).load(function(){
+            $("#header_wrapper").sticky({ topSpacing: 0 });
+        });
+    </script>
+    <!-- end jquery.sticky script-->
+
+    <!-- begin menu scrollTo script-->
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function() {
+                /* This code is executed after the DOM has been completely loaded */
+
+                $("#nav li a").click(function(e){
+
+                    var full_url = this.href;
+                    var parts = full_url.split("#");
+                    var trgt = parts[1];
+                    var target_offset = $("#"+trgt).offset();
+                    var target_top = target_offset.top;
+
+                    $('html,body').animate({scrollTop:target_top -80}, 1000);
+                    return false;
+
+                });
+
+            });
+        })(jQuery);
+    </script>
+    <!-- end menu scrollTo script-->
+
+    <!-- begin menu color script-->
+    <script src="js/jquery.nav.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#nav').onePageNav({
+                filter: ':not(.external)',
+                scrollThreshold: 0.25
+            });
+        });
+    </script>
+    <!-- end menu color script-->
+    <script src="js/eth/web3.min.js"></script>
+    <script src="js/eth/ethpay.js"></script>
+    <script src="js/pages/not_logged_in.js"></script>
+  {{/inline}}
+{{/layouts/base}}

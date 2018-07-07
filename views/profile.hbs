@@ -19,34 +19,15 @@
                     <div class="img"><img src="images/15.jpg"><div class="set_quit_new" id="signOut"><i class="fa fa-power-off" aria-hidden="true"></i>{{ translation.PROFILE_MENU_SIGNOUT }}</div></div>
                     <div class="name text_align_center"><span id="profile_name"></span></div>
                     <ul class="clearfix">
-                        <li class="current"><i class="fa fa-tags" aria-hidden="true"></i>{{ translation.PROFILE_MENU_ORDERS }}</li>
-                        <li><i class="fa fa-gift" aria-hidden="true"></i>{{ translation.PROFILE_MENU_VOUCHERS }}</li>
+                        <li class="current"><i class="fa fa-tags" aria-hidden="true"></i>{{ translation.PROFILE_MENU_VOUCHERS }}</li>
+                        <li><i class="fa fa-gift" aria-hidden="true"></i>{{ translation.PROFILE_MENU_ORDERS }}</li>
                         <li><i class="fa fa-address-book" aria-hidden="true"></i>{{ translation.PROFILE_MENU_ADDRESSES }}</li>
                         <li><i class="fa fa-wrench" aria-hidden="true"></i>{{ translation.PROFILE_MENU_SETTINGS }}</li>
                     </ul>
                     </div>
                     <div id="content">
-                        <ul style="display:block;">
-                            <li>
-                                <div class="cart_table">
-                                    <div class="profile_new_title"><a href="">{{ translation.PROFILE_ORDER_UNPAIED }}</a><a href="">{{ translation.PROFILE_ORDER_UNFINISHED }}</a><a class="on" href="">{{ translation.PROFILE_ORDER_FINISHED }}</a></div>
-                                    <table id="orderTable" class="responsive" valign="middle">
-                                        <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>{{ translation.PROFILE_ORDER_QUANTITY }}</th>
-                                            <th>{{ translation.PROFILE_ORDER_AMOUNT }}</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-
                         <!-------------------------兑换码--------------->
-                        <ul>
+                        <ul  style="display:block;">
                             <li>
                                 
                                 <div class="profile_new_num">
@@ -65,8 +46,41 @@
                                 </div>
                             </li>
                         </ul>
+                        <!-- 订单记录 -->
+                        <ul>
+                            <li>
+                                <div class="cart_table">
+                                    <div class="profile_new_title"><a href="">{{ translation.PROFILE_ORDER_UNPAIED }}</a><a href="">{{ translation.PROFILE_ORDER_UNFINISHED }}</a><a class="on" href="">{{ translation.PROFILE_ORDER_FINISHED }}</a></div>
+                                    <h3>Voucher Shopping History</h3>
+                                    <table id="orderTable" class="responsive" valign="middle">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>{{ translation.PROFILE_ORDER_QUANTITY }}</th>
+                                            <th>{{ translation.PROFILE_ORDER_AMOUNT }}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
 
-
+                                    <hr>
+                                    <h3>ETH Shopping History</h3>
+                                    <table id="ethOrderTable" class="responsive" valign="middle">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>TX Hash</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                            </li>
+                        </ul>
 
                         <ul>
                             <li>

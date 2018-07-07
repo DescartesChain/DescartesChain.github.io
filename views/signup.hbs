@@ -1,4 +1,4 @@
-{{#> layouts/basic title="注册" }}
+{{#> layouts/basic title="register" }}
 
   {{#*inline "content-block"}}
    <!--<div class="card card-auth mx-auto mt-5">
@@ -41,28 +41,28 @@
                     
                 
                     <div class="vali">
-                        <input type="text" id="username" name="" value="" class="uersname" placeholder="{{ translation.SIGNUP_USERNAME }}">
+                        <input type="text" id="username" name="username" value="" class="uersname aaa" placeholder="{{ translation.SIGNUP_USERNAME }}">
                     </div>
             
                     <div class="vali">
-                        <input type="text" id="phone" name="" value="" placeholder="{{ translation.SIGNUP_PHONE }}" class="phone">
+                        <input type="text" id="phone" name="phone" value="" placeholder="{{ translation.SIGNUP_PHONE }}" class="phone aaa">
                     </div>
               
                     <div class="vali">
-                        <input type="password" name="" value="" placeholder="{{ translation.SIGNUP_PASSWORD }}" class="pasw" id="password">
+                        <input type="password" name="password" value="" placeholder="{{ translation.SIGNUP_PASSWORD }}" class="pasw aaa" id="password">
                     </div>
                     <div class="vali">
-                        <input type="password" name="" value="" placeholder="{{ translation.SIGNUP_CONFIRM_PASSWORD }}" id="confirmPassword" class="pasws">
+                        <input type="password" name="password" value="" placeholder="{{ translation.SIGNUP_CONFIRM_PASSWORD }}" id="confirmPassword" class="pasws aaa">
                     </div>
                     <div class="vali">
-                        <input  id="email" type="text" name="" value="" class="eal" placeholder="{{ translation.SIGNUP_EMAIL }}">
+                        <input  id="email" type="text" name="email" value="" class="eal aaa" placeholder="{{ translation.SIGNUP_EMAIL }}">
                     </div>
-      
+                    <h3 style="color:red;text-align:left;display:none" id="judgeUser"></h3>
                     <div class="submit">
                         <button id="btnSignUp" class="btn ">{{ translation.SIGNUP_REGISTER }}</button>
                     </div>
                     <div class="login_bottom">
-                      已有账号，
+                      Already have an account,
                         <a class="" href="/signin">{{ translation.SIGNUP_LGOIN }}</a>
                         <!--<a class="" href="/forgot-password">{{ translation.FORGET_PASSWORD }}</a>-->
                     </div>
