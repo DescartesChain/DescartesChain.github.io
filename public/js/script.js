@@ -206,7 +206,7 @@ jQuery(window).load(function(){
 				hide_menu.click(function() {
 					// document.documentElement.scrollTop = 0;
 					// console.log('1111')
-					$('body').css({'overflow': "visible"})
+					// $('body').css({'overflow': "visible"})
 					container.removeClass('show_responsive_nav');
 					container.css({'height':"auto"});
 					return false;
