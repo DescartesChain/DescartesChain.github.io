@@ -53,6 +53,7 @@ Page = {
 
 $(document).ready( function(){ 
     Page.init( api_server ); 
+    // 当用户输入的时候将内容隐藏
     $('input').focus(function(){
         $("#alertTitle").css("display","none")
         $('p').css("display","block")

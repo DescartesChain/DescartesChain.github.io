@@ -74,8 +74,6 @@ $(document).ready(function(){
         var serachInputText = $(".aaa");
         $.each(serachInputText, function() {
             var input = $(this);
-            // console.log(input[0].childNodes[1].value)
-            // console.log(input.attr('id')); 
             map[input.attr('id')] = input.val();
         });
         var str = JSON.stringify(map);
