@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.title{
+	width: 1180px;
+	height: 130px;
+	margin: 0 auto;
+	background-color: red;
+	padding: 50px;
+	background: url('../img/book-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title h1{
+	font-size: 70px;
+	font-family: '楷体';
+}
+.title h3{
+	font-size: 40px;
+	font-family: '楷体';
+}
+.title span {
+	font-size: 20px;
+}
+.content{
+	width: 1280px;
+	height: 704px;
+	background-color: #ccc;
+	margin: 0 auto;
+}
+.content .book-image{
+	margin: 50px;
+	width: 450px;
+	height: 600px;
+	border: 1px solid red;
+}
+.content .book-sdetails{
+	position: relative;
+	font-family: '黑体';
+	margin-top: 50px;
+	width: 700px;
+	line-height: 30px;
+}
+.content .book-sdetails p{
+	font-size: 20px;
+}
+.content .book-sdetails span:nth-child(2){
+	margin-left: 100px;
+}
+.content .book-sdetails .text-padding{
+	display: inline-block;
+	padding:0 120px;
+	position: absolute;
+	top: 125px;
+	left: 0;
+}
+.button{
+	width: 1280px;
+	background-color: #ccc;
+	height: 120px;
+	text-align: center;
+	line-height: 100px;
+	margin:  0 auto;
+}
+.button .collection{
+	margin-left: 100px;
+	width: 300px;
+	height: 100px;
+	border-radius: 20px;
+	background-color: #99B1B5;
+	text-align: right;
+	position: relative;
+}
+.button .rading{
+	text-align: right;
+	margin-right: 100px;
+	width: 300px;
+	height: 100px;
+	border-radius: 20px;
+	background-color: #99B1B5;
+}
+.collection img{
+	top: 10px;
+	left: 30px;
+	position: absolute;
+}
+.collection p{
+	font-size: 30px;
+	margin-right: 20px;
+}
+.rading{
+	position: relative;
+}
+.rading p{
+		font-size: 30px;
+	margin-right: 20px;
+}
+.rading img{
+	top: 20px;
+	right: 200px;
+	position: absolute;
+}
+.button  img{
+	width: 80px;
+	height: 80px;
+}
+footer{
+	width: 1280px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #7D9599;
+}
