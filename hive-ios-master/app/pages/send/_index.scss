@@ -1,0 +1,348 @@
+
+
+#send {
+  &.content {
+    padding-bottom: 10px;
+  }
+}
+
+.send__address {
+
+  display: flex;
+  margin-bottom: 10px;
+
+  @include breakpoint(iphone5) {
+    flex-flow: row wrap;
+    margin-bottom: 18px;
+  }
+
+  .input__container {
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .close__input {
+    ._icon{
+      .svg-close {
+        fill: #969594;
+      }
+    }
+  }
+
+  ._label {
+    @include noselect;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin-right: 5px;
+    flex-grow: 2;
+
+    @include breakpoint(iphone5) {
+      font-size: 16px;
+      flex: 1 100%;
+      margin-right: 0px;
+    }
+    @include breakpoint(portrait) {
+      font-size: 20px;
+    }
+  }
+
+  ._btn {
+    @extend .hivebtn;
+
+    margin-top: 26px;
+    padding: 0;
+    width: 70px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(iphone5) {
+      flex: 2;
+      margin-top: 14px;
+      width: 42px;
+    }
+
+    @include breakpoint(portrait) {
+      margin-top: 35px;
+      width: 59px;
+      height: 70px;
+    }
+
+    ._title {
+      padding-left: 5px;
+      padding-right: 6px;
+      padding-top: 4px;
+      font-size: 16px;
+
+      display: none;
+
+      @include breakpoint(iphone5) {
+        display: block;
+      }
+      @include breakpoint(portrait) {
+        font-size: 24px;
+      }
+    }
+
+    ._icon {
+      width: 30px;
+      height: 30px;
+
+      .svg-qr, .svg-waggle {
+        @include breakpoint(iphone5) {
+          fill: #3180E7;
+        }
+      }
+
+      @include breakpoint(portrait) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &.qr {
+      margin-right: 5px;
+    }
+  }
+
+  ._input {
+    @extend .generic_box;
+    @extend .jigsaw-light;
+    padding-left: 10px;
+    padding-right: 38px;
+    border-radius: 2px;
+    height: auto;
+
+    &:active, &:focus {
+      outline: 0;
+      border: 1px solid $blue;
+    }
+
+    @include breakpoint(portrait) {
+      font-size: 26px;
+      border-radius: 3px;
+      padding-right: 58px;
+    }
+  }
+}
+
+.send__amount {
+
+  position: relative;
+
+  ._label {
+    @include noselect;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 3px;
+
+    @include breakpoint(iphone5) {
+      font-size: 16px;
+    }
+
+    @include breakpoint(portrait) {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  ._currency {
+    @include noselect;
+    @extend .jigsaw-light;
+    position: absolute;
+    z-index: 2000;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    right: 10px;
+    top: 11px;
+    opacity: 0.4;
+
+    @include breakpoint(portrait) {
+      top: 14px;
+    }
+
+    select {
+      @extend .jigsaw-light;
+      padding-right: 20px;
+      font-size: 18px;
+      border: none;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+        color: darken($blue, 30%);
+      }
+
+      @include breakpoint(portrait) {
+        font-size: 24px;
+      }
+    }
+
+    &.dropdown {
+      top: 5px;
+      right: 3px;
+      @include breakpoint(portrait) {
+        top: 7px;
+      }
+    }
+
+    @include breakpoint(portrait) {
+      font-size: 24px;
+    }
+  }
+
+  ._currency--error {
+    @include noselect;
+    @extend .jigsaw-light;
+    position: absolute;
+    z-index: 2000;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    right: 10px;
+    top: 9px;
+    opacity: 0.4;
+
+    select {
+      @extend .jigsaw-light;
+      padding-right: 20px;
+      font-size: 18px;
+      border: none;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.dropdown {
+      top: 4px;
+      right: 3px;
+    }
+  }
+
+
+  ._input {
+    @extend .generic_box;
+    @extend .jigsaw-light;
+    padding-left: 10px;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    position: relative;
+    z-index: 1000;
+
+    &:active, &:focus {
+      outline: 0;
+      border: 1px solid $blue;
+    }
+
+    @include breakpoint(portrait) {
+      font-size: 26px;
+      border-radius: 3px;
+    }
+  }
+
+  ._error {
+    background-color: lighten(red, 40%);
+    border: 1px solid red;
+  }
+
+}
+
+
+._input-group {
+  position: relative;
+  // margin-top: 5px;
+
+  & + ._input-group {
+    margin-top: 0;
+    ._input {
+      margin-top: -1px;
+      border-radius: 2px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      z-index: 300;
+      &:focus {
+        z-index: 300;
+      }
+    }
+  }
+}
+
+.send__buttons {
+  margin-top: 14px;
+  @include breakpoint(iphone5) {
+    margin-top: 15px;
+  }
+  @include breakpoint(portrait) {
+    margin-top: 40px;
+  }
+}
+
+.send__btn {
+  @extend .hivebtn;
+
+  &:active {
+    position: relative;
+    color: rgba(255,255,255, 0.3);
+    background-color: #2d5f8d;
+    box-shadow:inset 0 1px 1px 1px darken(#2d5f8d, 20%);
+    transform: translate(0px, 3px);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  @include breakpoint(portrait) {
+    font-size: 26px;
+    border-radius: 3px;
+  }
+}
+
+.send__btn--validating {
+  @extend .hivebtn;
+  position: relative;
+  margin-left: 5px;
+  color: darken($grey, 20%);
+  background-color: $grey;
+  transform: translate(0px, 3px);
+  box-shadow: 0 0px 0 0;
+  &:hover {
+    color: darken($grey, 20%);
+  }
+  ._icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    display: inline;
+    animation:  infinite-spinning 1s linear infinite;
+    .svg-refresh {
+      fill: darken($grey, 20%);
+    }
+  }
+}
+
+
+.fiat-tap-overlay {
+  position: absolute;
+  z-index: 3000;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+}
