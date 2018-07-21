@@ -1,0 +1,15 @@
+"description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "aperture link && node ./build.js build",
+    "start": "node server/server.js",
+    "dev": "aperture link && node ./build.js",
+    "test": "npm run test-server; npm run test-client",
+    "test-client": "karma start --single-run",
+    "test-server": "mocha server/test",
+    "postinstall": "aperture open",
+    "ios-build": "node build cordovaBuild",
+    "ios-build-release": "node build cordovaRelease",
+    "ios-emulator": "node build cordovaRunEmulator",
+    "ios-device": "node build cordovaRunDevice"
+  },
