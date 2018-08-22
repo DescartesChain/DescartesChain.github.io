@@ -1,5 +1,6 @@
 /**
  * Created by troyxu on 16/12/6.
+ *
  */
 var Dots = function (speed, alpha) {
     // 画布相关
